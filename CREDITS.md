@@ -1,3 +1,3 @@
-_# CREDITS_
+# CREDITS
 
 Thank you too...
