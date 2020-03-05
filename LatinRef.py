@@ -553,3 +553,43 @@ def invenio():
     dictator = Initial("find\n" ,present="I = invenio\n" ,perfect="I = inveni , you(singular) = invenisti , he/she = invenit , we = invenimus , you(plural) = invenistis , they = invenerunt\n")
     print(dictator)
     
+def pax():
+    dictator = Initial("peace\n" ,"Nominative = pax(singular) / paces(plural) , Dative = paci(singular) / pacibus(plural) , Accusative = pacem(singular) / paces(plural)\n")
+    print(dictator)
+    
+def bellum():
+    dictator = Initial("war\n")
+    print(dictator)
+    
+def nos():
+    dictator = Initial("we(plural)\n" ,"us\n")
+    print(dictator)
+    
+def quam():
+    dictator = Initial("than\n" ,"how\n")
+    print(dictator)
+    
+def semper():
+    dictator = Initial("always\n")
+    print(dictator)
+    
+def taceo():
+    dictator = Initial("silent\n" ,"quiet\n" ,"I = taceo , you(singular) = taces , he/she = tacet , we = tacemus , you(plural) = tacetis , they = tacent\n" ,"I = tacebam , you(singular) = tacebas , he/she = tacebat , we = tacebamsus , you(plural) = tacebatis , they = tacebant\n" ,"I = tacui , you(singular) = tacuisti , he/she = tacuit , we = tacuimus , you(plural) = tacuistis , they - tacuerunt\n")
+    print(dictator)
+    
+def vos():
+    dictator = Initial("you(plural)\n")
+    print(dictator)
+    
+def stultus():
+    dictator = Initial("foolish\n" ,"stupid\n")
+    print(dictator)
+    
+def callidus():
+    dictator = Initial("clever\n" ,"cunning\n")
+    print(dictator)
+    
+def uxor():
+    dictator = Initial("uxor\n" ,"Nominative = uxor(singular) / uxores(plural) , Dative = uxori(singular) / uxoribus(plural) , Accusative = uxorem(singular) / uxores(plural)\n")
+    print(dictator)
+    
