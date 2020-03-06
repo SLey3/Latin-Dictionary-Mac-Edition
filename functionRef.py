@@ -372,7 +372,7 @@ def userInstructions(userInput):
 
     clear = lambda: os.system('clear')
     clear()   
-    return input('\nType in your command or any Latin word to review or learn. Enter your responce: ')
+    return str.lower(input('\nType in your command or any Latin word to review or learn. Enter your responce: '))
 
 def words():
     wordList = ["salve" , "vale" , "et" , "est" , "in" , "sunt" , "non" , "insula" , "sed" , "oppidum"

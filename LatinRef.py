@@ -593,3 +593,87 @@ def uxor():
     dictator = Initial("uxor\n" ,"Nominative = uxor(singular) / uxores(plural) , Dative = uxori(singular) / uxoribus(plural) , Accusative = uxorem(singular) / uxores(plural)\n")
     print(dictator)
     
+def suus():
+    dictator = Initial("his\n" ,"hers/its/their\n")
+    print(dictator)
+    
+def solus():
+    dictator = Initial("alone\n" ,"only/lonely\n")
+    print(dictator)
+    
+def nuntio():
+    dictator = Initial("announce\n" ,present="I = nuntio , you(singular) = nuntias , he/she = nuntiat , we = nuntiamus , you(plural) = nuntiatis , they = nuntiant\n" ,imperfect="I = nuntiabam , you(singular) = nuntiabas , he/she = nuntiabat , we = nuntiabamus , you(plural) = nuntiabatis , they = nuntiabant\n" ,perfect="I = nuntiavi , you(singular) = nuntiavisti , he/she = nuntiavit , we = nuntiavimus , you(plural) = nuntiavistis , they = nuntiaverunt\n")
+    print(dictator)
+    
+def magister():
+    dictator = Initial("teacher\n" ,"master\n")
+    print(dictator)
+    
+def discipulus():
+    dictator = Initial("student\n")
+    print(dictator)
+    
+def doceo():
+    dictator = Initial("teach\n" ,present="I = doceo , you(singular) = doces , he/she = docet , we = docemus , you(plural) = docetis , they = docent\n" ,imperfect="I = docebam , you(singular) = docebas , he/she = docebat , we = docebamus , you(plural) = docebatis , they = docebant\n" ,perfect="I = docui , you(singular) = docuisti , he/she = docuit , we = docuimus , you(plural) = docuistis , they = docuerunt\n")
+    print(dictator)
+    
+def num():
+    dictator = Initial("surely not\n")
+    print(dictator)
+    
+def subito():
+    dictator = Initial("suddenly\n")
+    print(dictator)
+    
+def gratias():
+    dictator = Initial("thank\n" ,"Nominative = gratiae(plural) , Dative = gratiis(plural) , Accusative = Gratias(plural)\n")
+    print(dictator)
+    
+def quaeso():
+    dictator = Initial("please\n")
+    print(dictator)
+    
+def capio():
+    dictator = Initial("take\n" ,"capture\n" ,"I = capio , you(singular) = capis , he/she = capit , we = capimus , you(plural) = capitis , they = capiunt\n" ,"I = capiebam , you(singular) = capiebas , he/she = capiebat , we = capiebamus , you(plural) = capiebatis , they = capiebant\n" ,"I = cepi , you(singular) = cepisti , he/she = cepit , we = cepimus , you(plural) = cepistis , they = ceperunt\n")
+    print(dictator)
+
+def nunc():
+    dictator = Initial("now\n")
+    print(dictator)
+    
+def tum():
+    dictator = Initial("then\n")
+    print(dictator)
+    
+def mihi():
+    dictator = Initial("to me\n" ,"{for me} Nobis(plural) = for us/to us\n")
+    print(dictator)
+    
+def tibi():
+    dictator = Initial("to you\n" ,"vobis(plural) = for you\n")
+    print(dictator)
+    
+def credo():
+    dictator = Initial("believe\n" ,"trusts/faith\n" ,"I = credo , you(singular) = credis , he/she = credit , we = credimus , you(plural) = creditis , they = credunt\n" ,"I = credebam , you(singular) = credebas , he/she = credebat , we = credebamus , you(plural) = credebatis , they = credebant\n" ,"I = credidi , you(singular) = credidisti , he/she = credidit , we = credidimus , you(plural) = credidimus , they = crediderunt\n")
+    print(dictator)
+    
+def de():
+    dictator = Initial("from\n" ,"about\n")
+    print(dictator)
+    
+def noster():
+    dictator = Initial("our\n")
+    print(dictator)
+    
+def placet():
+    dictator = Initial("pleases\n" ,"likes/suit\n" ,"I = placeo , you(singular) = places , he/she = placet , we = placemus , you(plural) = placetis , they = placent\n" ,"I = placebam , you(singular) = placebas , he/she = placebat , we = placebamus , you(plural) = placebatis , they = placebant\n" ,"I = placui , you(singular) = placuisti , he/she = placuit , we = placuimus , you(plural) = placuistis , they = placuerunt\n")
+    print(dictator)
+    
+def civis():
+    dictator = Initial("citizen\n" ,"Nominative = civis(singular) / cives(plural) , Dative = civi(singular) / civibus(plural) , Accusative = civem(singular) / cives(plural)\n")
+    print(dictator)
+    
+def lego():
+    dictator = Initial("read\n" ,present="I = lego , you(singular) = legis , he/she = legit , we = legimus , you(plural) = legitis , they = legunt\n" ,imperfect="I = legebam , you(singular) = legebas , he/she = legebat , we = legebamus , you(plural) = legebatis , they = legebant\n" ,perfect="I = legi , you(singular) = legisti , he/she = legit , we = legimus , you(plural) = legistis , they = legerunt\n")
+    print(dictator)
+    
