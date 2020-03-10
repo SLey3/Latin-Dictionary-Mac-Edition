@@ -677,3 +677,18 @@ def lego():
     dictator = Initial("read\n" ,present="I = lego , you(singular) = legis , he/she = legit , we = legimus , you(plural) = legitis , they = legunt\n" ,imperfect="I = legebam , you(singular) = legebas , he/she = legebat , we = legebamus , you(plural) = legebatis , they = legebant\n" ,perfect="I = legi , you(singular) = legisti , he/she = legit , we = legimus , you(plural) = legistis , they = legerunt\n")
     print(dictator)
     
+def iam():
+    dictator = Initial("now\n" ,"already\n")
+    print(dictator)
+    
+def terra():
+    dictator = Initial("land\n" ,"{earth/ground} Nominative = terra(singular) / terrae(plural) , Dative = terrae(singular) / terris(plural) , Accusative = terram(singular) / terras(plural)\n")
+    print(dictator)
+    
+def custodio():
+    dictator = Initial("guard\n" ,present="I = custodio , you(singular) = custodis , he/she = custodit , we = custodimus , you(plural) = custoditis , they = custodiunt\n" ,imperfect="I = custodiebam , you(singular) = custodiebas , he/she = custodiebat , we = custodiebamus , you(plural) = custodiebatis , they = custodiebant\n" ,perfect="I = custodivi , you(singular) = custodivisti , he/she = custodivit , we = custodivimus , you(plural) = custodivistis , they = custodiverunt\n")
+    print(dictator)
+    
+def fortiter():
+    dictator = Initial("bravely\n" ,"strongly\n")
+    print(dictator)
