@@ -1,8 +1,8 @@
-#IMPORTS
+# IMPORTS
 from time import sleep
 import os
 import LatinRef
-
+clear = os.system('clear')
 #FUNCTIONS
 def help():
     print("list of commands\n"
@@ -11,366 +11,464 @@ def help():
           + "tutorial = tutorial on how to use this app and some other stuff for Latin beginners\n"
           + "Quit = exits the main program to the exit credits and then exits the app\n") ; sleep(2.0)
     input("Press enter to exit.")
-    clear = lambda: os.system('clear')
     clear()
 
     
 def userInstructions(userInput):
     if userInput == "help" or userInput == "Help":
-        os.system("clear")
+        clear()
         help()
     elif userInput == "list" or userInput == "List":
-        os.system("clear")
+        clear()
         words()
     elif userInput == "tutorial" or userInput == "Tutorial":
-        os.system("clear")
+        clear()
         tutorial()
     elif userInput == "salve" or userInput == "Salve":
-        os.system("clear")
+        clear()
         LatinRef.salve()
         input("Press enter to exit.")
     elif userInput == "vale" or userInput == "Vale":
-        os.system("clear")
+        clear()
         LatinRef.vale()
         input("Press enter to exit.")
     elif userInput == "et" or userInput == "Et":
-        os.system("clear")
+        clear()
         LatinRef.et()
         input("Press enter to exit.")
     elif userInput == "est" or userInput == "Est":
-        os.system("clear")
+        clear()
         LatinRef.est()
         input("Press enter to exit.")
     elif userInput == "in" or userInput == "In":
-        os.system("clear")
+        clear()
         LatinRef.In()
         input("Press enter to exit.")
     elif userInput == "sunt" or userInput == "Sunt":
-        os.system("clear")
+        clear()
         LatinRef.sunt()
         input("Press enter to exit.")
     elif userInput == "non" or userInput == "Non":
-        os.system("clear")
+        clear()
         LatinRef.non()
         input("Press enter to exit.")
     elif userInput == "insula" or userInput == "Insula":
-        os.system("clear")
+        clear()
         LatinRef.insula()
         input("Press enter to exit.")
     elif userInput == "sed" or userInput == "Sed":
-        os.system("clear")
+        clear()
         LatinRef.sed()
         input("Press enter to exit.")
     elif userInput == "oppidum" or userInput == "Oppidum":
-        os.system("clear")
+        clear()
         LatinRef.oppidum()
         input("Press enter to exit.")
     elif userInput == "quoque" or userInput == "Quoque":
-        os.system("clear")
+        clear()
         LatinRef.quoque()
         input("Press enter to exit.")
     elif userInput == "canis" or userInput == "Canis":
-        os.system("clear")
+        clear()
         LatinRef.canis()
         input("Press enter to exit.")
     elif userInput == "coquus" or userInput == "Coquus":
-        os.system("clear")
+        clear()
         LatinRef.coquus()
         input("Press enter to exit.")
     elif userInput == "filia" or userInput == "Filia":
-        os.system("clear")
+        clear()
         LatinRef.filia()
         input("Press enter to exit.")
     elif userInput == "filius" or userInput == "Filius":
-        os.system("clear")
+        clear()
         LatinRef.filius()
         input("Press enter to exit.")
     elif userInput == "hortus" or userInput == "Hortus":
-        os.system("clear")
+        clear()
         LatinRef.hortus()
         input("Press enter to exit.")
     elif userInput == "mater" or userInput == "Mater":
-        os.system("clear")
+        clear()
         LatinRef.mater()
         input("Press enter to exit.")
     elif userInput == "pater" or userInput == "Pater":
-        os.system("clear")
+        clear()
         LatinRef.pater()
         input("Press enter to exit.")
     elif userInput == "servus" or userInput == "Servus":
-        os.system("clear")
+        clear()
         LatinRef.servus()
         input("Press enter to exit.")
     elif userInput == "via" or userInput == "Via":
-        os.system("clear")
+        clear()
         LatinRef.via()
         input("Press enter to exit.")
     elif userInput == "amicus" or userInput == "Amicus":
-        os.system("clear")
+        clear()
         LatinRef.amicus()
         input("Press enter to exit.")
     elif userInput == "ancilla" or userInput == "Ancilla":
-        os.system("clear")
+        clear()
         LatinRef.ancilla()
         input("Press enter to exit.")
     elif userInput == "cena" or userInput == "Cena":
-        os.system("clear")
+        clear()
         LatinRef.cena()
         input("Press enter to exit.")
     elif userInput == "cibus" or userInput == "cibus":
-        os.system("clear")
+        clear()
         LatinRef.cibus()
         input("Press enter to exit.")
     elif userInput == "intro" or userInput == "Intro":
-        os.system("clear")
+        clear()
         LatinRef.intro()
         input("Press enter to exit.")
     elif userInput == "saluto" or userInput == "Saluto":
-        os.system("clear")
+        clear()
         LatinRef.saluto()
         input("Press enter to exit.")
     elif userInput == "porto" or userInput == "Porto":
-        os.system("clear")
+        clear()
         LatinRef.porto()
         input("Press enter to exit.")
     elif userInput == "video" or userInput == "Video":
-        os.system("clear")
+        clear()
         LatinRef.video()
         input("Press enter to exit.")
     elif userInput == "dominus" or userInput == "Dominus":
-        os.system("clear")
+        clear()
         LatinRef.dominus()
         input("Press enter to exit.")
     elif userInput == "laetus" or userInput == "Laetus":
-        os.system("clear")
+        clear()
         LatinRef.laetus()
         input("Press enter to exit.")
     elif userInput == "mercator" or userInput == "Mercator":
-        os.system("clear")
+        clear()
         LatinRef.mercator()
         input("Press enter to exit.")
     elif userInput == "audio" or userInput == "Audio":
-        os.system("clear")
+        clear()
         LatinRef.audio()
         input("Press enter to exit.")
     elif userInput == "dico" or userInput == "Dico":
-        os.system("clear")
+        clear()
         LatinRef.dico()
         input("Press enter to exit.")
     elif userInput == "unus" or userInput == "Unus":
-        os.system("clear")
+        clear()
         LatinRef.unus()
         input("Press enter to exit.")
     elif userInput == "duo" or userInput == "Duo":
-        os.system("clear")
+        clear()
         LatinRef.duo()
         input("Press enter to exit.")
     elif userInput == "tres" or userInput == "Tres":
-        os.system("clear")
+        clear()
         LatinRef.tres()
         input("Press enter to exit.")
     elif userInput == "quattuor" or userInput == "Quattuor":
-        os.system("clear")
+        clear()
         LatinRef.quattuor()
         input("Press enter to exit.")
     elif userInput == "quinque" or userInput == "Quinque":
-        os.system("clear")
+        clear()
         LatinRef.quinque()
         input("Press enter to exit.")
     elif userInput == "sex" or userInput == "Sex":
-        os.system("clear")
+        clear()
         LatinRef.sex()
         input("Press enter to exit.")
     elif userInput == "septem" or userInput == "Septem":
-        os.system("clear")
+        clear()
         LatinRef.septem()
         input("Press enter to exit.")
     elif userInput == "octo" or userInput == "Octo":
-        os.system("clear")
+        clear()
         LatinRef.octo()
         input("Press enter to exit.")
     elif userInput == "novem" or userInput == "Novem":
-        os.system("clear")
+        clear()
         LatinRef.novem()
         input("Press enter to exit.")
     elif userInput == "decem" or userInput == "Decem":
-        os.system("clear")
+        clear()
         LatinRef.decem()
         input("Press enter to exit.")
     elif userInput == "ad" or userInput == "Ad":
-        os.system("clear")
+        clear()
         LatinRef.ad()
         input("Press enter to exit.")
     elif userInput == "ecce" or userInput == "Ecce":
-        os.system("clear")
+        clear()
         LatinRef.ecce()
         input("Press enter to exit.")
     elif userInput == "magnus" or userInput == "Magnus":
-        os.system("clear")
+        clear()
         LatinRef.magnus()
         input("Press enter to exit.")
     elif userInput == "parvus" or userInput == "Parvus":
-        os.system("clear")
+        clear()
         LatinRef.parvus()
         input("Press enter to exit.")
     elif userInput == "ambulo" or userInput == "Ambulo":
-        os.system("clear")
+        clear()
         LatinRef.ambulo()
         input("Press enter to exit.")
     elif userInput == "iratus" or userInput == "Iratus":
-        os.system("clear")
+        clear()
         LatinRef.iratus()
         input("Press enter to exit.")
     elif userInput == "quis" or userInput == "Quis":
-        os.system("clear")
+        clear()
         LatinRef.quis()
         input("Press enter to exit.")
     elif userInput == "quid" or userInput == "Quid":
-        os.system("clear")
+        clear()
         LatinRef.quid()
         input("Press enter to exit.")
     elif userInput == "cur" or userInput == "Cur":
-        os.system("clear")
+        clear()
         LatinRef.cur()
         input("Press enter to exit.")
     elif userInput == "ubi" or userInput == "Ubi":
-        os.system("clear")
+        clear()
         LatinRef.ubi()
         input("Press enter to exit.")
     elif userInput == "sum" or userInput == "Ubi":
-        os.system("clear")
+        clear()
         LatinRef.sum()
         input("Press enter to exit.")
     elif userInput == "eheu" or userInput == "Eheu":
-        os.system("clear")
+        clear()
         LatinRef.eheu()
         input("Press enter to exit.")
     elif userInput == "pecunia" or userInput == "Pecunia":
-        os.system("clear")
+        clear()
         LatinRef.pecunia()
         input("Press enter to exit.")
     elif userInput == "ego" or userInput == "Ego":
-        os.system('clear')
+        clear()
         LatinRef.ego()
         input("Press enter to exit.")
     elif userInput == "tu" or userInput == "Tu":
-        os.system('clear')
+        clear()
         LatinRef.tu()
         input("Press enter to exit.")
     elif userInput == "habeo" or userInput == "Habeo":
-        os.system('clear')
+        clear()
         LatinRef.habeo()
         input("Press enter to exit.")
     elif userInput == "respondeo" or userInput == "Respondeo":
-        os.system('clear')
+        clear()
         LatinRef.respondeo()
         input("Press enter to exit.")
     elif userInput == "venio" or userInput == "Venio":
-        os.system('clear')
+        clear()
         LatinRef.venio()
         input("Press enter to exit.")
     elif userInput == "rideo" or userInput == "Rideo":
-        os.system('clear')
+        clear()
         LatinRef.rideo()
         input("Press enter to exit.")
     elif userInput == "quod" or userInput == "Quod":
-        os.system('clear')
+        clear()
         LatinRef.quod()
         input("Press enter to exit.")
     elif userInput == "ex" or userInput == "Ex":
-        os.system('clear')
+        clear()
         LatinRef.ex()
         input("Press enter to exit.")
     elif userInput == "voco" or userInput == "Voco":
-        os.system('clear')
+        clear()
         LatinRef.voco()
         input("Press enter to exit.")
     elif userInput == "clamo" or userInput == "Clamo":
-        os.system('clear')
+        clear()
         LatinRef.clamo()
         input("Press enter to exit.")
     elif userInput == "specto" or userInput == "Specto":
-        os.system('clear') 
+        clear()
         LatinRef.specto()
         input("Press enter to exit.")
     elif userInput == "taberna" or userInput == "Taberna":
-        os.system('clear')
+        clear()
         LatinRef.taberna()
-        input("Press enter to exit.")   
+        input("Press enter to exit.")
     elif userInput == "laboro" or userInput == "Laboro":
-        os.system('clear')
+        clear()
         LatinRef.laboro()
         input("Press enter to exit.")
     elif userInput == "femina" or userInput == "Femina":
-        os.system('clear')
+        clear()
         LatinRef.femina()
         input("Press enter to exit.")
     elif userInput == "vir" or userInput == "Vir":
-        os.system('clear')
+        clear()
         LatinRef.vir()
         input("Press enter to exit.")
     elif userInput == "puer" or userInput == "Puer":
-        os.system('clear')
+        clear()
         LatinRef.puer()
         input("Press enter to exit.")
     elif userInput == "puella" or userInput == "Puella":
-        os.system('clear')
+        clear()
         LatinRef.puella()
         input("Press enter to exit.")
     elif userInput == "multus" or userInput == "Multus":
-        os.system('clear')
+        clear()
         LatinRef.multus()
         input("Press enter to exit.")
     elif userInput == "urbs" or userInput == "Urbs":
-        os.system('clear')
+        clear()
         LatinRef.multus()
         input("Press enter to exit.")
     elif userInput == "agricola" or userInput == "Agricola":
-        os.system('clear')
+        clear()
         LatinRef.agricola()
         input("Press enter to exit.")
     elif userInput == "curro" or userInput == "Curro":
-        os.system('clear')
+        clear()
         LatinRef.curro()
         input("Press enter to exit.")
     elif userInput == "hodie" or userInput == "Hodie":
-        os.system('clear')
+        clear()
         LatinRef.hodie()
         input("Press enter to exit.")
     elif userInput == "iuvenis" or userInput == "Iuvenis":
-        os.system('clear')
+        clear()
         LatinRef.iuvenis()
         input("Press enter to exit.")
     elif userInput == "meus" or userInput == "Meus":
-        os.system('clear')
+        clear()
         LatinRef.meus()
         input("Press enter to exit.")
     elif userInput == "Senex" or userInput == "Senex":
-        os.system('clear')
+        clear()
         LatinRef.senex()
     elif userInput == "sto" or userInput == "Sto":
-        os.system('clear')
+        clear()
         LatinRef.sto()
         input("Press enter to exit.")
     elif userInput == "optimus" or userInput == "Optimus":
-        os.system('clear')
+        clear()
         LatinRef.optimus()
         input("Press enter to exit.")
     elif userInput == "volo" or userInput == "Volo":
-        os.system('clear')
+        clear()
         LatinRef.volo()
         input("Press enter to exit.")
     elif userInput == "fortis" or userInput == "Fortis":
-        os.system('clear')
+        clear()
         LatinRef.fortis()
         input("Press enter to exit.")
+    elif userInput == "emo":
+        clear()
+        LatinRef.emo()
+        input("Press enter to exit.")
+    elif userInput == "pulso":
+        clear()
+        LatinRef.pulso()
+        input("Press enter to exit.")
+    elif userInput == "bonus":
+        clear()
+        LatinRef.bonus()
+        input("Press enter to exit.")
+    elif userInput == "malus":
+        clear()
+        LatinRef.malus()
+        input("Press enter to exit.")
+    elif userInput == "festino":
+        clear()
+        LatinRef.festino()
+        input("Press enter to exit.")
+    elif userInput == "per":
+        clear()
+        LatinRef.per()
+        input("Press enter to exit.")
+    elif userInput == "pugno":
+        clear()
+        LatinRef.pugno()
+        input("Press enter to exit.")
+    elif userInput == "scribo":
+        clear()
+        LatinRef.scribo()
+        input("Press enter to exit.")
+    elif userInput == "tuus":
+        clear()
+        LatinRef.tuus()
+        input("Press enter to exit.")
+    elif userInput == "paro":
+        clear()
+        LatinRef.paro()
+        input("Press enter to exit.")
+    elif userInput == "cum":
+        clear()
+        LatinRef.cum()
+        input("Press enter to exit.")
+    elif userInput == "facio":
+        clear()
+        LatinRef.facio()
+        input("Press enter to exit.")
+    elif userInput == "heri":
+        clear()
+        LatinRef.heri()
+        input("Press enter to exit.")
+    elif userInput == "ingens":
+        clear()
+        LatinRef.ingens()
+        input("Press enter to exit.")
+    elif userInput == "nihil":
+        clear()
+        LatinRef.nihil()
+        input("Press enter to exit.")
+    elif userInput == "omnis":
+        clear()
+        LatinRef.omnis()
+        input("Press enter to exit.")
+    elif userInput == "vendo":
+        clear()
+        LatinRef.vendo()
+        input("Press enter to exit.")
+    elif userInput == "navis":
+        clear()
+        LatinRef.navis()
+        input("Press enter to exit.")
+    elif userInput == "prope":
+        clear()
+        LatinRef.prope()
+        input("Press enter to exit.")
+    elif userInput == "rogo":
+        clear()
+        LatinRef.rogo()
+        input("Press enter to exit.")
+    elif userInput == "terreo":
+        clear()
+        LatinRef.terreo()
+        input("Press enter to exit.")
+    elif userInput == "inquit":
+        clear()
+        LatinRef.inquit()
+        input("Press enter to exit.")
+    elif userInput == "tamen":
+        clear()
+        LatinRef.tamen()
+        input("Press enter to exit.")
+    elif userInput == "eum":
+        clear()
+        LatinRef.eum()
+        input("Press enter to exit.")
+    elif userInput == "eam":
+        clear()
+        LatinRef.eam()
+        input("Press enter to exit.")
         
+    
 
     else:
-        os.system("clear")
+        clear()
         print("Thats not a command.") ; sleep(1.5)
-
-    clear = lambda: os.system('clear')
     clear()   
     return str.lower(input('\nType in your command or any Latin word to review or learn. Enter your responce: '))
 
@@ -381,51 +479,42 @@ def words():
                 , "sex" , "septem" , "octo" , "novem" , "decem" , "ad" , "ecce" , "magnus" , "parvus" , "ambulo" , "iratus" , "quis" , "quid" , "cur" , "ubi" ,
                 "sum" , "eheu" , "pecunia" , "ego" , "tu" , "habeo" , "respondeo" , "venio" , "rideo" , "quod" , "ex" , "voco" , "clamo" , "specto" , "taberna"
                 , "laboro" , "clamor" , "femina" , "vir", "puer" , "puella" , "multus" , "urbs" , "agricola" , "curro" , "hodie" , "iuvenis" , "meus" , "senex" , "sto" ,
-                "optimus" , "volo" , "fortis" , "emo" , "pulso" , "bonus" , "malus" , "festino" , "per" , "pugno" , "scribo" , "tuus" , "paro" , "cum" , "facio" ,
+                "optimus" , "volo" , "fortis" , "emo" , "pulso" , "bonus" , "malus" , "festino" , "per" , "pugno" , "scribo" , "tuus" , "erat" , "paro" , "cum" , "facio" ,
                 "heri" , "ingens" , "nihil" , "omnis" , "vendo" , "navis" , "prope" , "rogo" , "terreo" , "inquit" , "tamen" , "eum" , "eam" , "duco" , "saepe" , "interficio" ,
-                "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero", "homo" , "maneo" , "medius" , "mox" , "ostendo" , "trado" , "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" , "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego" , "sollicitus" , "mons" , "mirabilis" ,"templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter"] 
+                "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero" , "homo" , "maneo" , "medius" , "mox" , 
+                "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
+                 "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
+                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem"] 
 
     print("List:") ; sleep(2.0)
     print('\n'.join(map(str, wordList))) ; sleep(2.0)
     input("Press enter to exit.")
-    clear = lambda: os.system('clear')
     clear()
 
 def tutorial():
     print("Are you new to Latin?")
     new = input()
-    if new == "yes" or new == "Yes":
+    if(str.lower(new == "yes" or new == "Yes")):
         new = True
     else:
         new = False
-    os.system('clear')
+    clear()
     print("Starting tutorial.") ; sleep(1.0)
     print("If you need help with the app itself just say: help or Help to see all of the avaliable commands you could do.") ; sleep(1.5)
     print("In order to quit you have to input: Quit") ; sleep(1.5)
     if new == True:
-        print("If your new to latin the ''v'' is spelled as a ''w''. For example: Salve would be Salwe.") ; sleep(1.5)
-        print("There is a present, imperfect and perfect tence.") ; sleep(1.5)
-        print("The present tence is the what it means, your using the present tence like habeo which is have.") ; sleep(1.5)
-        print("The imperfect tence works like the past tence, meaning that habeo in the imperfect tence would be habebam which means was having") ; sleep(1.5)
-        print("The perfect tence works kind of similar to the past tence since instead of using the ''ba'' its using ''bui'' for the case for habui which means haved. But for most latin words it would be ''vi''") ; sleep(1.5)
+        print("If you're new to Latin the ''v'' is spelled as a ''w''. For example: Salve would be Salwe.") ; sleep(1.5)
+        print("There are a present, imperfect and perfect tenses.") ; sleep(1.5)
+        print("The present tense is the what it means, your using the present tence like habeo which is have.") ; sleep(1.5)
+        print("The imperfect tense works like the past tense, meaning that habeo in the imperfect tence would be habebam which means was having") ; sleep(1.5)
+        print("The perfect tense works kind of similar to the past tence since instead of using the ''ba'' its using ''bui'' for the case for habui which means haved. But for most latin words it would be ''vi''") ; sleep(1.5)
         input("Press enter to exit.")
-        clear = lambda: os.system('clear') 
+        print("Exiting Tutorial") ; sleep(1.0)
         clear()
     else:
         input("Press enter to exit.")
-        clear = lambda: os.system('clear')
+        print("Exiting Tutorial") ; sleep(1.0)
         clear()
-
-
-
-
-
-
-
-
-
-
-
 
 
 
