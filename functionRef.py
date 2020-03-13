@@ -463,7 +463,146 @@ def userInstructions(userInput):
         clear()
         LatinRef.eam()
         input("Press enter to exit.")
-        
+    elif userInput == "duco":
+        clear()
+        LatinRef.duco()
+        input("Press enter to exit.")
+    elif userInput == "saepe":
+        clear()
+        LatinRef.saepe()
+        input("Press enter to exit.")
+    elif userInput == "interficio":
+        clear()
+        LatinRef.interficio()
+        input("Press enter to exit.")
+    elif userInput == "habito":
+        clear()
+        LatinRef.habito()
+        input("Press enter to exit.")
+    elif userInput == "silva":
+        clear()
+        LatinRef.silva()
+        input("Press enter to exit.")
+    elif userInput == "statim":
+        clear()
+        LatinRef.statim()
+        input("Press enter to exit.")
+    elif userInput == "totus":
+        clear()
+        LatinRef.totus()
+        input("Press enter to exit.")
+    elif userInput == "pessimus":
+        clear()
+        LatinRef.pessimus()
+        input("Press enter to exit.")
+    elif userInput == "cupio":
+        clear()
+        LatinRef.cupio()
+        input("Press enter to exit.")
+    elif userInput == "celeriter":
+        clear()
+        LatinRef.celeriter()
+        input("Press enter to exit.")
+    elif userInput == "do":
+        clear()
+        LatinRef.do()
+        input("Press enter to exit.")
+    elif userInput == "iterum":
+        clear()
+        LatinRef.iterum()
+        input("Press enter to exit.")
+    elif userInput == "pulcher":
+        clear()
+        LatinRef.pulcher()
+        input("Press enter to exit.")
+    elif userInput == "dies":
+        clear()
+        LatinRef.dies()
+        input("Press enter to exit.")
+    elif userInput == "fero":
+        clear()
+        LatinRef.fero()
+        input("Press enter to exit.")
+    elif userInput == "homo":
+        clear()
+        LatinRef.homo()
+        input("Press enter to exit.")
+    elif userInput == "maneo":
+        clear()
+        LatinRef.maneo()
+        input("Press enter to exit.")
+    elif userInput == "medius":
+        clear()
+        LatinRef.medius()
+        input("Press enter to exit.")
+    elif userInput == "mox":
+        clear()
+        LatinRef.mox()
+        input("Press enter to exit.")
+    elif userInput == "ostendo":
+        clear()
+        LatinRef.ostendo()
+        input("Press enter to exit.")
+    elif userInput == "trado":
+        clear()
+        LatinRef.trado()
+        input("Press enter to exit.")
+    elif userInput == "nomen":
+        clear()
+        LatinRef.nomen()
+        input("Press enter to exit.")
+    elif userInput == "accipio":
+        clear()
+        LatinRef.accipio()
+        input("Press enter to exit.")
+    elif userInput == "frater":
+        clear()
+        LatinRef.frater()
+        input("Press enter to exit.")
+    elif userInput == "soror":
+        clear()
+        LatinRef.soror()
+        input("Press enter to exit.")
+    elif userInput == "invenio":
+        clear()
+        LatinRef.invenio()
+        input("Press enter to exit.")
+    elif userInput == "pax":
+        clear()
+        LatinRef.pax()
+        input("Press enter to exit.")
+    elif userInput == "bellum":
+        clear()
+        LatinRef.bellum()
+        input("Press enter to exit.")
+    elif userInput == "nos":
+        clear()
+        LatinRef.nos()
+        input("Press enter to exit.")
+    elif userInput == "quam":
+        clear()
+        LatinRef.quam()
+        input("Press enter to exit.")
+    elif userInput == "semper":
+        clear()
+        LatinRef.semper()
+        input("Press enter to exit.")
+    elif userInput == "taceo":
+        clear()
+        LatinRef.taceo()
+        input("Press enter to exit.")
+    elif userInput == "vos":
+        clear()
+        LatinRef.vos()
+        input("Press enter to exit.")
+    elif userInput == "stultus":
+        clear()
+        LatinRef.stultus()
+        input("Press enter to exit.")
+    elif userInput == "callidus":
+        clear()
+        LatinRef.callidus()
+        input("Press enter to exit.")
     
 
     else:
