@@ -603,7 +603,10 @@ def userInstructions(userInput):
         clear()
         LatinRef.callidus()
         input("Press enter to exit.")
-    
+    elif userInput == "uxor":
+        clear()
+        LatinRef.uxor()
+        input("Press enter to exit.")
 
     else:
         clear()
@@ -623,7 +626,7 @@ def words():
                 "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero" , "homo" , "maneo" , "medius" , "mox" , 
                 "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
                  "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
-                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem"] 
+                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo"] 
 
     print("List:") ; sleep(2.0)
     print('\n'.join(map(str, wordList))) ; sleep(2.0)
