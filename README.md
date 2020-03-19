@@ -13,3 +13,4 @@ _This is the Alpha release so there will be specific requirments and you will se
 
 ## **Installation link**
 https://github.com/SLey3/Latin-Dictionary-Mac-Edition/releases/tag/v.a
+ 
