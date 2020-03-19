@@ -760,8 +760,8 @@ def words():
 
 def tutorial():
     print("Are you new to Latin?")
-    new = input()
-    if(str.lower(new == "yes" or new == "Yes")):
+    new = str.lower(input())
+    if new == "yes":
         new = True
     else:
         new = False
