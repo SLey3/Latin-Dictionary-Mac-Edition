@@ -2,20 +2,15 @@
 import tkinter as tk
 from tkinter import *
 from pathlib import Path
+
 ### Extra Code
 picturePath1 = str(Path.home())+'/Latin_app/Pictures/Logo.jpeg'
 picturePath2 = str(Path.home())+'/Latin_app/Pictures/Icon.png'
-picturePath3 = str(Path.home())+'/Latin_app/Pictures/Logo.ico'
+
 ### Application screen code
 root = tk.Tk()
 
-
-## Window Title, Icon, and Display
-# Window Display
-
-# Window Icon
-root.wm_iconbitmap('Icon.ico')
-
+## Window Title and Icom
 # Task Bar Icon
 root.iconphoto('wm', tk.PhotoImage(file=picturePath2))
 
