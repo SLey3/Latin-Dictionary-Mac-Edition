@@ -692,3 +692,27 @@ def custodio():
 def fortiter():
     dictator = Initial("bravely\n" ,"strongly\n")
     print(dictator)
+    
+def fugio():
+    dictator = Initial("flee\n" ,"run away\n" ,"I = fugio , you(singular) = fugis , he/she = fugit , we = fugimus , you(plural) = fugitis, they = fugiunt\n" ,"I = fugiebam , you(singular) = fugiebas , he/she = fugiebat , we = fugiebamus , you(plural) = fugiebatis , they = fugiebant\n" ,"I = fugi , you(singular) = fugisti , he/she = fugit , we = fugimus , you(plural) = fugistis , they = fugerunt\n")
+    print(dictator)
+    
+def igitur():
+    dictator = Initial("therefore\n" ,"And so...\n")
+    print(dictator)
+    
+def tristis():
+    dictator = Initial("sad\n")
+    print(dictator)
+    
+def iubeo():
+    dictator = Initial("order\n" ,present="I = iubeo , you(singular) = iubes , he/she = iubet , we = iubemus , you(plural) = iubetis , they = iubent\n" ,imperfect="I = iubebam , you(singular) = iubebas , he/she = iubebat , we = iubebamus , you(plural) = iubebatis , they = iubebant\n" ,perfect="I = iussi , you(singular) = iussisti , he/she = iussit , we = iussimus , you(plural) = ussistis , they = iusserunt\n")
+    print(dictator)
+    
+def deleo():
+    dictator = Initial("grieve\n" ,"be hurt\n")
+    print(dictator)
+    
+def displodo():
+    dictator = Initial("explode\n")
+    print(dictator)    

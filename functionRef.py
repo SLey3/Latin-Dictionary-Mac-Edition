@@ -2,8 +2,10 @@
 from time import sleep
 import os
 import LatinRef
-clear = os.system('clear')
+
 #FUNCTIONS
+def clear():
+    os.system('clear')
 def help():
     print("list of commands\n"
           + "help = Display of commands\n"
@@ -607,7 +609,130 @@ def userInstructions(userInput):
         clear()
         LatinRef.uxor()
         input("Press enter to exit.")
-
+    elif userInput == "suus":
+        clear()
+        LatinRef.suus()
+        input("Press enter to exit.")
+    elif userInput == "solus":
+        clear()
+        LatinRef.solus()
+        input("Press enter to exit.")
+    elif userInput == "nuntio":
+        clear()
+        LatinRef.nuntio()
+        input("Press enter to exit.")
+    elif userInput == "magister":
+        clear()
+        LatinRef.magister()
+        input("Press enter to exit.")
+    elif userInput == "discipulus":
+        clear()
+        LatinRef.discipulus()
+        input("Press enter to exit.")
+    elif userInput == "doceo":
+        clear()
+        LatinRef.doceo()
+        input("Press enter to exit.")
+    elif userInput == "num":
+        clear()
+        LatinRef.num()
+        input("Press enter to exit.")
+    elif userInput == "subito":
+        clear()
+        LatinRef.subito()
+        input("Press enter to exit.")
+    elif userInput == "gratias":
+        clear()
+        LatinRef.gratias()
+        input("Press enter to exit.")
+    elif userInput == "quaeso":
+        clear()
+        LatinRef.quaeso()
+        input("Press enter to exit.")
+    elif userInput == "capio":
+        clear()
+        LatinRef.capio()
+        input("Press enter to exit.")
+    elif userInput == "nunc":
+        clear()
+        LatinRef.nunc()
+        input("Press enter to exit.")
+    elif userInput == "tum":
+        clear()
+        LatinRef.tum()
+        input("Press enter to exit.")
+    elif userInput == "mihi":
+        clear()
+        LatinRef.mihi()
+        input("Press enter to exit.")
+    elif userInput == "tibi":
+        clear()
+        LatinRef.tibi()
+        input("Press enter to exit.")
+    elif userInput == "credo":
+        clear()
+        LatinRef.credo()
+        input("Press enter to exit.")
+    elif userInput == "de":
+        clear()
+        LatinRef.de()
+        input("Press enter to exit.")
+    elif userInput == "noster":
+        clear()
+        LatinRef.noster()
+        input("Press enter to exit.")
+    elif userInput == "placet":
+        clear()
+        LatinRef.placet()
+        input("Press enter to exit.")
+    elif userInput == "civis":
+        clear()
+        LatinRef.civis()
+        input("Press enter to exit.")
+    elif userInput == "lego":
+        clear()
+        LatinRef.lego()
+        input("Press enter to exit.")
+    elif userInput == "iam":
+        clear()
+        LatinRef.iam()
+        input("Press enter to exit.")
+    elif userInput == "terra":
+        clear()
+        LatinRef.terra()
+        input("Press enter to exit.")
+    elif userInput == "custodio":
+        clear()
+        LatinRef.custodio()
+        input("Press enter to exit.")
+    elif userInput == "fortiter":
+        clear()
+        LatinRef.fortiter()
+        input("Press enter to exit.")
+    elif userInput == "fugio":
+        clear()
+        LatinRef.fugio()
+        input("Press enter to exit.")
+    elif userInput == "igitur":
+        clear()
+        LatinRef.igitur()
+        input("Press enter to exit.")
+    elif userInput == "tristis":
+        clear()
+        LatinRef.tristis()
+        input("Press enter to exit.")
+    elif userInput == "iubeo":
+        clear()
+        LatinRef.iubeo()
+        input("Press enter to exit.")
+    elif userInput == "deleo":
+        clear()
+        LatinRef.deleo()
+        input("Press enter to exit.")
+    elif userInput == "displodo":
+        clear()
+        LatinRef.displodo()
+        input("Press enter to exit.")
     else:
         clear()
         print("Thats not a command.") ; sleep(1.5)
@@ -657,8 +782,3 @@ def tutorial():
         input("Press enter to exit.")
         print("Exiting Tutorial") ; sleep(1.0)
         clear()
-
-
-
-
-        
