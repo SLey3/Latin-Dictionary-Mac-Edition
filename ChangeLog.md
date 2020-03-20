@@ -1,7 +1,7 @@
 # _Change Log_
 --------------------------------------------------------------------------------------
 # Alpha Update is released
-* **_functionRef.py_**: addded the clear function and updated UserInput commands
+* **_functionRef.py_**: added the clear function and updated UserInput commands
 * **_LatinRef.py_**: added new vocabulary words
 * **_README.md_**: Updated and added new sections to the file
 # Windows.py Update (_Pre Alpha#3_)
