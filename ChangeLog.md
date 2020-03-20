@@ -1,6 +1,6 @@
 # _Change Log_
 --------------------------------------------------------------------------------------
-# Alpha Update is released
+# Alpha Release
 * **_functionRef.py_**: added the clear function and updated UserInput commands
 * **_LatinRef.py_**: added new vocabulary words
 * **_README.md_**: Updated and added new sections to the file
