@@ -733,6 +733,26 @@ def userInstructions(userInput):
         clear()
         LatinRef.displodo()
         input("Press enter to exit.")
+    elif userInput == "aeger":
+        clear()
+        LatinRef.aeger()
+        input("Press enter to exit.")
+    elif userInput == "alter":
+        clear()
+        LatinRef.alter()
+        input("Press enter to exit.")
+    elif userInput == "fessus":
+        clear()
+        LatinRef.fessus()
+        input("Press enter to exit.")
+    elif userInput == "ignavus":
+        clear()
+        LatinRef.ignavus()
+        input("Press enter to exit.")
+    elif userInput == "nolo":
+        clear()
+        LatinRef.nolo()
+        input("Press enter to exit.")
     else:
         clear()
         print("Thats not a command.") ; sleep(1.5)
@@ -751,7 +771,7 @@ def words():
                 "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero" , "homo" , "maneo" , "medius" , "mox" , 
                 "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
                  "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
-                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo"] 
+                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo"] 
 
     print("List:") ; sleep(2.0)
     print('\n'.join(map(str, wordList))) ; sleep(2.0)

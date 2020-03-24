@@ -715,4 +715,24 @@ def deleo():
     
 def displodo():
     dictator = Initial("explode\n")
-    print(dictator)    
+    print(dictator)   
+    
+def aeger():
+    dictator = Initial("sick\n" ,"{ill} Nominative = aeger(singular) / aegri(plural) , Dative = aegro(singular) /aegris(plural) , Accusative = aegrum(singular) / aegris(plural)\n")
+    print(dictator)
+    
+def alter():
+    dictator = Initial("other\n" ,"{of two} Nominative = alter(singular) / alteri(plural) , Dative = altero(singular) / alteris(plural) , Accusative = alterum(singular) / alteros(plural)\n")
+    print(dictator)
+
+def fessus():
+    dictator = Initial("tired\n" ,"Nominative = fessus(singular) / fessi(plural) , Dative = fesso(singular) / fessis(plural) , Accusative = fessum(singular) / fessos(plural)\n")
+    print(dictator)
+    
+def ignavus():
+    dictator = Initial("cowardly\n" ,"{lazy} Nominative = ignavus(singular) / ignavi(plural) . Dative = ignavo(singular) / ignavis(plural) , Accusative = ignavos(singular) / ignavos(plural)\n")
+    print(dictator)
+    
+def nolo():
+    dictator = Initial("not want\n" ,"be unwilling, refuse\n" ,"I = nolo , you(singular) = non vis , he/she = non vult , we = nolumus , you(plural) = non vultis , they = nolunt\n" ,"I = nolebam , you(singular) = nolebas , he/she = nolebat , we = nolebamus , you(plural) = nolebatis , they = nolebant\n" ,"I = nolui , you(singular) = noluisti , he/she = noluit , we = noluimus , you(plural) = noluistis , they = noluerunt\n")
+    print(dictator)
