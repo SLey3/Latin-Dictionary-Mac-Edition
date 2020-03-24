@@ -9,6 +9,7 @@ _This is the Alpha release so there will be specific requirments and you will se
 
 ## **_Requirments_**
 * MacOs Darwin or Higher
+* Python 3.6 or higher
 * Visual Studio Code or any software that will run terminal (_Recommended_)
 
 ## **Installation link**
