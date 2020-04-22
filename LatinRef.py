@@ -1,11 +1,12 @@
 # INITILIZATION 
 class Initial:
-    def __init__(self, definition, others = None, present = None, imperfect = None, perfect = None):
+    def __init__(self, definition, others = None, present = None, imperfect = None, perfect = None , otherInfo = None):
         self.definition = definition
         self.other_meanings = others
         self.present = present
         self.imperfect = imperfect
         self.perfect = perfect
+        self.additionalInfo = otherInfo
 
     def __str__(self):
         return  str(self.__class__) + '\n' + '\n'.join((str(item) + ' = ' + str(self.__dict__[item]) for item in sorted(self.__dict__)))
@@ -735,4 +736,52 @@ def ignavus():
     
 def nolo():
     dictator = Initial("not want\n" ,"be unwilling, refuse\n" ,"I = nolo , you(singular) = non vis , he/she = non vult , we = nolumus , you(plural) = non vultis , they = nolunt\n" ,"I = nolebam , you(singular) = nolebas , he/she = nolebat , we = nolebamus , you(plural) = nolebatis , they = nolebant\n" ,"I = nolui , you(singular) = noluisti , he/she = noluit , we = noluimus , you(plural) = noluistis , they = noluerunt\n")
+    print(dictator)
+    
+def traho():
+    dictator = Initial("drag\n" ,"pull\n" ,"I = traho , you(singular) = trahis , he/she = trahit , we = trahimus , you(plural) = trahitis , they = trahunt\n" ,"I = trahebam , you(singular) = trahebas , he/she = trahebat , we = trahebamus , you(plural) = trahebatis , they = trahebant\n" ,"I = traxi , you(singular) = traxisti , he/she = traxit , we = traximus , you(plural) = traxistis , they = traxerunt\n")
+    print(dictator)
+    
+def hic():
+    dictator = Initial("this\n" ,"Nominative = hic(singular) / hi(plural) , Dative = huic(singular) / his(plural) , Accusative = hunc(singular) / hos(plural)\n")
+    print(dictator)
+    
+def ille():
+    dictator = Initial("that\n" ,"{he} Nominative = ille(singular) / illi(plural) , Dative = illi(singular) / illis(plural) , Accusative = illum(singular) / illos(plural)\n")
+    print(dictator)
+    
+def possum():
+    dictator = Initial("be able\n" ,"can\n" ,"I = possum , you(singular) = potes , he/she = potest , we = possumus , you(plural) = potestis , they = possunt\n" ,"I = poteram , you(singular) = poteras , he/she = poterat , we = poteramus , you(plural) = poteratis , they = poterant\n" ,"I = potui , you(singular) = potuisti , he/she = potuit , we = potuimus , you(plural) = potuistis , they = potuerunt\n")
+    print(dictator)
+    
+def que():
+    dictator = Initial("and\n" ,otherInfo="Placed after a word. (e.g materque pater)\n")
+    print(dictator)
+
+def ne():
+    dictator = Initial(None ,otherInfo="Signals a question. (e.g. Estne)\n")
+    print(dictator)
+    
+def ceteri():
+    dictator = Initial("others\n" ,"{the rest} Nominative = ceteri(plural) , Dative = ceteris(plural) , Accusative = ceteros(plural)\n")
+    print(dictator)
+
+def novus():
+    dictator = Initial("new\n" ,"Nominative = novus(singular) / novi(plural) , Dative = novo(singular) / novis(plural) , Accusative = novum(singular) / novos(plural)\n")
+    print(dictator)
+    
+def se():
+    dictator = Initial("himself\n" ,"{herself, itself, themselves} Nominative = None , Dative = sibi(singular and plural) , Accusative = sui(singular and plural)\n")
+    print(dictator)
+    
+def vita():
+    dictator = Initial("life\n" ,"Nominative = vita(singular) / vitae(plural) , Dative = vitae(singular) / vitis(plural) , Accusative = vitam(singular) / vitas\n")
+    print(dictator)
+    
+def attonitus():
+    dictator = Initial("astonished\n" ,"Nominative = attonitus(singular) / attonti(plural) , Dative = attonito(singular) / attonitis(plural) , Accusative = attonitum(singular) / attonitos(plural)\n")
+    print(dictator)
+    
+def facilis():
+    dictator = Initial("easy\n" ,"Nominative = facilis(singular) / faciles(plural) , Dative = facili(singular) / facilibus(plural) , Accusative = facilem(singular) / faciles(plural)\n")
     print(dictator)

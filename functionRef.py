@@ -753,6 +753,54 @@ def userInstructions(userInput):
         clear()
         LatinRef.nolo()
         input("Press enter to exit.")
+    elif userInput == "ne" or userInput == "-ne":
+        clear()
+        LatinRef.ne()
+        input("Press enter to exit.")
+    elif userInput == "traho":
+        clear()
+        LatinRef.traho()
+        input("Press enter to exit.")
+    elif userInput == "hic":
+        clear()
+        LatinRef.hic()
+        input("Press enter to exit.")
+    elif userInput == "ille":
+        clear()
+        LatinRef.ille()
+        input("Press enter to exit.")
+    elif userInput == "possum":
+        clear()
+        LatinRef.possum()
+        input("Press enter to exit.")
+    elif userInput == "que" or userInput == "-que":
+        clear()
+        LatinRef.que()
+        input("Press enter to exit.")
+    elif userInput == "ceteri":
+        clear()
+        LatinRef.ceteri()
+        input("Press enter to exit.")
+    elif userInput == "novus":
+        clear()
+        LatinRef.novus()
+        input("Press enter to exit.")
+    elif userInput == "se":
+        clear()
+        LatinRef.se()
+        input("Press enter to exit.")
+    elif userInput == "vita":
+        clear()
+        LatinRef.vita()
+        input("Press enter to exit.")
+    elif userInput == "attonitus":
+        clear()
+        LatinRef.attonitus()
+        input("Press enter to exit.")
+    elif userInput == "facilis":
+        clear()
+        LatinRef.facilis()
+        input("Press enter to exit.")
     else:
         clear()
         print("Thats not a command.") ; sleep(1.5)
@@ -771,7 +819,7 @@ def words():
                 "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero" , "homo" , "maneo" , "medius" , "mox" , 
                 "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
                  "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
-                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo"] 
+                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo" , "-ne" , "traho" , "hic" , "ille" , "possum" , "-que" , "ceteri" , "novus" , "se" , "vita" , "attonitus" , "facilis"] 
 
     print("List:") ; sleep(2.0)
     print('\n'.join(map(str, wordList))) ; sleep(2.0)
@@ -788,6 +836,7 @@ def tutorial():
     clear()
     print("Starting tutorial.") ; sleep(1.0)
     print("If you need help with the app itself just say: help or Help to see all of the avaliable commands you could do.") ; sleep(1.5)
+    print("The { } means that the other meaning is present but the Nominative, Dative, and Accusative meanings are also there.") ; sleep(1.5)
     print("In order to quit you have to input: Quit") ; sleep(1.5)
     if new == True:
         print("If you're new to Latin the ''v'' is spelled as a ''w''. For example: Salve would be Salwe.") ; sleep(1.5)

@@ -1,5 +1,9 @@
 # _Change Log_
 --------------------------------------------------------------------------------------
+# Modification to _LatinRef.py_ , _LatinDictRef.csv_ , and _functionRef.py_ (_V.A#2_)
+* **_LatinRef.py_**: Added 12 new vocabulary terms and added a new argument in the __init__() function.
+* **_LatinDictRef.csv_**: Added a new column to the csv file.
+* **_functionRef.py_**: Added the 12 new vocabulary terms to the words() function, added the new commands to the userInstructions() function, and added a new sentence in the tutorial() function.
 # Modification to _functionRef.py_ and _LatinRef.py_ (_V.A#1_)
 * **_LatinRef.py_**: Added 5 new vocabulary terms.
 * **_functionRef.py_**: Updated UserInput commands and added 5 new words to the _words()_ function.

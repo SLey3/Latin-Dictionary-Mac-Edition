@@ -4,13 +4,13 @@ from tkinter import *
 from pathlib import Path
 
 ### Extra Code
-picturePath1 = str(Path.home())+'/Latin_app/Pictures/Logo.jpeg'
-picturePath2 = str(Path.home())+'/Latin_app/Pictures/Icon.png'
+picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.jpeg'
+picturePath2 = str(Path.home()) + '/Latin_app/Pictures/Icon.png'
 
 ### Application screen code
 root = tk.Tk()
 
-## Window Title and Icom
+## Window Title and Icon
 # Task Bar Icon
 root.iconphoto('wm', tk.PhotoImage(file=picturePath2))
 
