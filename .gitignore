@@ -2,3 +2,6 @@ __pycache__
 Latin app.code-workspace
 .DS_store
 .vscode/
+Pipfile
+Pipfile.lock
+GitHub yml/
