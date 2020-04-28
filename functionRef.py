@@ -801,6 +801,32 @@ def userInstructions(userInput):
         clear()
         LatinRef.facilis()
         input("Press enter to exit.")
+    elif userInput == "apud":
+        clear()
+        LatinRef.apud()
+        input("Press enter to exit.")
+    elif userInput == "decorus":
+        clear()
+        LatinRef.decorus
+        input("Press enter to exit.")
+    elif userInput == "ipse":
+        clear()
+        LatinRef.ipse()
+        input("Press enter to exit.")
+    elif userInput == "iste":
+        clear()
+        LatinRef.iste()
+        input("Press enter to exit.")
+    elif userInput == "necesse":
+        clear()
+        LatinRef.necesse()
+        input("Press enter to exit.")
+    elif userInput == "quamquam":
+        clear()
+    elif userInput == "deus":
+        clear()
+        LatinRef.deus()
+        input("Press enter to exit.")
     else:
         clear()
         print("Thats not a command.") ; sleep(1.5)
@@ -819,7 +845,7 @@ def words():
                 "habito" , "silva" , "statim" , "totus" , "pessimus" , "cupio" , "celeriter" , "do" , "iterum" , "pulcher" , "dies" , "fero" , "homo" , "maneo" , "medius" , "mox" , 
                 "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
                  "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
-                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo" , "-ne" , "traho" , "hic" , "ille" , "possum" , "-que" , "ceteri" , "novus" , "se" , "vita" , "attonitus" , "facilis"] 
+                 , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo" , "-ne" , "traho" , "hic" , "ille" , "possum" , "-que" , "ceteri" , "novus" , "se" , "vita" , "attonitus" , "facilis" , "apud" , "decorus" , "ipse" , "iste" , "necesse" , "quamquam" , "deus"] 
 
     print("List:") ; sleep(2.0)
     print('\n'.join(map(str, wordList))) ; sleep(2.0)

@@ -13,11 +13,11 @@ class Initial:
     
 # DEFINITIONS
 def salve():
-    dictator = Initial("hello\n" ,"salvete = hello (plural)\n")
+    dictator = Initial("hello\n" ,otherInfo="salvete = hello (plural)\n")
     print(dictator)
     
 def vale():
-    dictator = Initial("good-bye\n" ,"valete = good-bye (plural)\n")
+    dictator = Initial("good-bye\n" ,otherInfo="valete = good-bye (plural)")
     print(dictator)
 
 def et():
@@ -37,7 +37,7 @@ def sunt():
     print(dictator)
     
 def non():
-    dictator = Initial("not\n" ,"non = no\n")
+    dictator = Initial("not\n" ,"no\n")
     print(dictator)
     
 def insula():
@@ -61,7 +61,7 @@ def canis():
     print(dictator)
 
 def coquus():
-    dictator = Initial("cook\n" ,"Nominative = coquues(singular) / coqui(plural) , Dative = coquo(singular) / coquis(plural) , Accusative = coquum(singular) / coquos(plural)\n")
+    dictator = Initial("cook\n" ,"Nominative = coquus(singular) / coqui(plural) , Dative = coquo(singular) / coquis(plural) , Accusative = coquum(singular) / coquos(plural)\n")
     print(dictator)
 
 def filia():
@@ -85,7 +85,7 @@ def pater():
     print(dictator)
 
 def servus():
-    dictator = Initial("servant\n" ,"{servus = slave} Nominative = servus(singular) / servi(plural) , Dative = servo(singular) / servis(plural) , Accusative = servum(singular) / servos(plural)\n" )
+    dictator = Initial("servant\n" ,"{slave} Nominative = servus(singular) / servi(plural) , Dative = servo(singular) / servis(plural) , Accusative = servum(singular) / servos(plural)\n" )
     print(dictator)
 
 def via():
@@ -97,7 +97,7 @@ def amicus():
     print(dictator)
 
 def ancilla():
-    dictator = Initial("female slave\n" ,"Nominative = ancilla(singular) / ancillae , Dative = ancillae(singular) / ancillis(plural) , Accusative = anicillam(singular) / ancillas(plural)\n")
+    dictator = Initial("female slave\n" ,"{Female servant}Nominative = ancilla(singular) / ancillae , Dative = ancillae(singular) / ancillis(plural) , Accusative = anicillam(singular) / ancillas(plural)\n")
     print(dictator)
 
 def cena():
@@ -125,7 +125,7 @@ def video():
     print(dictator)
 
 def dominus():
-    dictator = Initial("master\n" ,"{dominus = lord} Nominative = dominus(singular) / domini(plural) , Dative = domino(singular) / dominis(plural) , Accusative = dominum(singular) / dominos(plural)\n")
+    dictator = Initial("master\n" ,"{lord} Nominative = dominus(singular) / domini(plural) , Dative = domino(singular) / dominis(plural) , Accusative = dominum(singular) / dominos(plural)\n")
     print(dictator)
 
 def laetus():
@@ -253,7 +253,7 @@ def respondeo():
     print(dictator)
 
 def venio():
-    dictator = Initial("come\n" ,present="I = venio , you(singular) = venis , he/she = venit , we = venimus , you(plural) = venitis , they = veniunt\n" ,imperfect="I = veniebam , you(singular) = veniebas , he/she = veniebat , we = veniebamus , you(singular) = vaniebatis , they = veniebant\n")
+    dictator = Initial("come\n" ,present="I = venio , you(singular) = venis , he/she = venit , we = venimus , you(plural) = venitis , they = veniunt\n" ,imperfect="I = veniebam , you(singular) = veniebas , he/she = veniebat , we = veniebamus , you(Plural) = vaniebatis , they = veniebant\n")
     print(dictator)
 def rideo():
     dictator = Initial("laugh\n" ,"smile" ,"I = rideo , you(singular) = rides , he/she = ridet , we = ridemus , you(plural) = ridetis , they = rident\n" ,"I = ridebam , you(singular) = ridebas , he/she = ridebat , we = ridebamus , you(plural) = ridebatis , they = ridebant\n" ,"I = risi , you(singular) = risisti , he/she = risit , we = risimus , you(plural) = risistis , they = riserunt\n")
@@ -264,7 +264,7 @@ def quod():
     print(dictator)
     
 def ex():
-    dictator = Initial("out of\n" ,"{ex = e} out from / from\n")
+    dictator = Initial("out of\n" ,"out from / from\n")
     print(dictator)
     
 def voco():
@@ -272,7 +272,7 @@ def voco():
     print(dictator)
 
 def clamo():
-    dictator = Initial("shout\n" ,"yell / noise (writtten as ''clamor'')\n" ,"I = clamo , you(singular) = clamas , he/she = clamat , we = clamamus , you(plurs) = clamatis , they = clamant\n" ,"I = clamabam , you(singular) = clamabas , he/she = clamabat , we = clamabamus , you(plural) = clamabatis, they = clamabant\n" ,"I = clamavi , you(singular) = clamavisti , he/she = clamavit , we = clamavimus , you(plural) = clamvistis , they = clamaverunt\n")
+    dictator = Initial("shout\n" ,"yell / noise (written as ''clamor'')\n" ,"I = clamo , you(singular) = clamas , he/she = clamat , we = clamamus , you(plurs) = clamatis , they = clamant\n" ,"I = clamabam , you(singular) = clamabas , he/she = clamabat , we = clamabamus , you(plural) = clamabatis, they = clamabant\n" ,"I = clamavi , you(singular) = clamavisti , he/she = clamavit , we = clamavimus , you(plural) = clamvistis , they = clamaverunt\n")
     print(dictator)
 
 def specto():
@@ -280,7 +280,7 @@ def specto():
     print(dictator)
 
 def taberna():
-    dictator = Initial("shop\n" ,"{store / shop / inn} Nominative = taberna(singular) / tabernae(plural) , Dative = tabernae(singular) / tabernis(plural) , Accusative = tabernam(singular) / tabernas(plural)\n")
+    dictator = Initial("shop\n" ,"{store / inn} Nominative = taberna(singular) / tabernae(plural) , Dative = tabernae(singular) / tabernis(plural) , Accusative = tabernam(singular) / tabernas(plural)\n")
     print(dictator)
 
 def laboro():
@@ -292,15 +292,15 @@ def femina():
     print(dictator)
 
 def vir():
-    dictator = Initial("man\n" ,"Accusative = vir(singular) / viri(plural) , Dative = viro(singular) / viris(plural) , Accusative = virum(singular) / viros(plural)\n")
+    dictator = Initial("man\n" ,"Nominative = vir(singular) / viri(plural) , Dative = viro(singular) / viris(plural) , Accusative = virum(singular) / viros(plural)\n")
     print(dictator)  
 
 def puer():
-    dictator = Initial("boy\n" ,"Accusative = puer(singular) / puri(plural) , Dative = puero(singular) / pueris(plural) , Accusative = puerum(singular) / pueros(plural)\n")
+    dictator = Initial("boy\n" ,"Nominative = puer(singular) / puri(plural) , Dative = puero(singular) / pueris(plural) , Accusative = puerum(singular) / pueros(plural)\n")
     print(dictator) 
 
 def puella():
-    dictator = Initial("girl\n" ,"Nominative = puella(singular) / puellae(plural) , Dative = puellae(singular) / puells(plural) , Accusative = puellam(singular) / puellas(plural)\n")
+    dictator = Initial("girl\n" ,"Nominative = puella(singular) / puellae(plural) , Dative = puellae(singular) / puellis(plural) , Accusative = puellam(singular) / puellas(plural)\n")
     print(dictator)
     
 def multus():
@@ -340,7 +340,7 @@ def sto():
     print(dictator)
     
 def optimus():
-    dictator = Initial("best\n" ,"excellent, very good\n")
+    dictator = Initial("best\n" ,"excellent / very good\n")
     print(dictator)
     
 def volo():
@@ -784,4 +784,30 @@ def attonitus():
     
 def facilis():
     dictator = Initial("easy\n" ,"Nominative = facilis(singular) / faciles(plural) , Dative = facili(singular) / facilibus(plural) , Accusative = facilem(singular) / faciles(plural)\n")
+    print(dictator)
+    
+def apud():
+    dictator = Initial("among\n" ,"At someone's house")
+    print(dictator)
+    
+def decorus():
+    dictator = Initial("proper" ,"{appropriate / right} Nominative = decorus(singular) / decori(plural) , Dative = decoro(singular) / decoris(plural) , Accusative = decorum(singular) / decoros(plural)\n")
+def ipse():
+    dictator = Initial("-self\n" ,otherInfo="Used after him / her and other words that follows similary to those two words. (e.g himself, herself, and itself)\n")
+    print(dictator)
+    
+def iste():
+    dictator = Initial("That\n" ,otherInfo="In a negative sence\n")
+    print(dictator)
+    
+def necesse():
+    dictator = Initial("necessary\n")
+    print(dictator)
+    
+def quamquam():
+    dictator = Initial("although\n")
+    print(dictator)
+    
+def deus():
+    dictator = Initial("god\n" ,"goddess\n")
     print(dictator)
