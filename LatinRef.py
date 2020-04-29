@@ -511,11 +511,11 @@ def fero():
     print(dictator)
     
 def homo():
-    dictator = Initial("human\n" ,"{person/man} Nominative = homo(singular) / homines , Dative = homini(singular) / hominibus(plural) , Accusative = hominem(singular) / homines(plural)\n")
+    dictator = Initial("human\n" ,"{person/man} Nominative = homo(singular) / homines(plural) , Dative = homini(singular) / hominibus(plural) , Accusative = hominem(singular) / homines(plural)\n")
     print(dictator)
     
 def maneo():
-    dictator = Initial("reamain\n" ,"stay\n" ,"I = maneo , you(singular) = manes , he/she = manet , we = manemus , you(plural) = manetis , they = manent\n" ,"I = manebam , you(singular) = manebas , he/she = manebat , we = manebamus , you(singular) = manebatis , they = manebant\n" ,"I = mansi , you(singular) = mansisti , he/she = mansit , we = mansimus , you(plural) = mansistis , they = manserunt\n")
+    dictator = Initial("remain\n" ,"stay\n" ,"I = maneo , you(singular) = manes , he/she = manet , we = manemus , you(plural) = manetis , they = manent\n" ,"I = manebam , you(singular) = manebas , he/she = manebat , we = manebamus , you(singular) = manebatis , they = manebant\n" ,"I = mansi , you(singular) = mansisti , he/she = mansit , we = mansimus , you(plural) = mansistis , they = manserunt\n")
     print(dictator)
     
 def medius():
@@ -535,7 +535,7 @@ def trado():
     print(dictator)
     
 def nomen():
-    dictator = Initial("nomen\n")
+    dictator = Initial("name\n")
     print(dictator)
     
 def accipio():
@@ -575,7 +575,7 @@ def semper():
     print(dictator)
     
 def taceo():
-    dictator = Initial("silent\n" ,"quiet\n" ,"I = taceo , you(singular) = taces , he/she = tacet , we = tacemus , you(plural) = tacetis , they = tacent\n" ,"I = tacebam , you(singular) = tacebas , he/she = tacebat , we = tacebamsus , you(plural) = tacebatis , they = tacebant\n" ,"I = tacui , you(singular) = tacuisti , he/she = tacuit , we = tacuimus , you(plural) = tacuistis , they - tacuerunt\n")
+    dictator = Initial("silent\n" ,"quiet\n" ,"I = taceo , you(singular) = taces , he/she = tacet , we = tacemus , you(plural) = tacetis , they = tacent\n" ,"I = tacebam , you(singular) = tacebas , he/she = tacebat , we = tacebamsus , you(plural) = tacebatis , they = tacebant\n" ,"I = tacui , you(singular) = tacuisti , he/she = tacuit , we = tacuimus , you(plural) = tacuistis , they - tacuerunt\n" ,"Tace = Shut up\n")
     print(dictator)
     
 def vos():
@@ -591,7 +591,7 @@ def callidus():
     print(dictator)
     
 def uxor():
-    dictator = Initial("uxor\n" ,"Nominative = uxor(singular) / uxores(plural) , Dative = uxori(singular) / uxoribus(plural) , Accusative = uxorem(singular) / uxores(plural)\n")
+    dictator = Initial("wife\n" ,"Nominative = uxor(singular) / uxores(plural) , Dative = uxori(singular) / uxoribus(plural) , Accusative = uxorem(singular) / uxores(plural)\n")
     print(dictator)
     
 def suus():
@@ -647,11 +647,11 @@ def tum():
     print(dictator)
     
 def mihi():
-    dictator = Initial("to me\n" ,"{for me} Nobis(plural) = for us/to us\n")
+    dictator = Initial("to me\n" ,"for me\n")
     print(dictator)
     
 def tibi():
-    dictator = Initial("to you\n" ,"vobis(plural) = for you\n")
+    dictator = Initial("to you\n" ,otherInfo="vobis(plural) = for you\n")
     print(dictator)
     
 def credo():
@@ -687,7 +687,7 @@ def terra():
     print(dictator)
     
 def custodio():
-    dictator = Initial("guard\n" ,present="I = custodio , you(singular) = custodis , he/she = custodit , we = custodimus , you(plural) = custoditis , they = custodiunt\n" ,imperfect="I = custodiebam , you(singular) = custodiebas , he/she = custodiebat , we = custodiebamus , you(plural) = custodiebatis , they = custodiebant\n" ,perfect="I = custodivi , you(singular) = custodivisti , he/she = custodivit , we = custodivimus , you(plural) = custodivistis , they = custodiverunt\n")
+    dictator = Initial("guard\n" ,present="I = custodio , you(singular) = custodis , he/she = custodit , we = custodimus , you(plural) = custoditis , they = custodiunt\n" ,imperfect="I = custodiebam , you(singular) = custodiebas , he/she = custodiebat , we = custodiebamus , you(plural) = custodiebatis , they = custodiebant\n" ,perfect="I = custodivi , you(singular) = custodivisti , he/she = custodivit , we = custodivimus , you(plural) = custodivistis , they = custodiverunt\n" ,otherInfo="custodio is like multiple guards while custos = one guard\n")
     print(dictator)
     
 def fortiter():
@@ -707,7 +707,7 @@ def tristis():
     print(dictator)
     
 def iubeo():
-    dictator = Initial("order\n" ,present="I = iubeo , you(singular) = iubes , he/she = iubet , we = iubemus , you(plural) = iubetis , they = iubent\n" ,imperfect="I = iubebam , you(singular) = iubebas , he/she = iubebat , we = iubebamus , you(plural) = iubebatis , they = iubebant\n" ,perfect="I = iussi , you(singular) = iussisti , he/she = iussit , we = iussimus , you(plural) = ussistis , they = iusserunt\n")
+    dictator = Initial("order\n" ,present="I = iubeo , you(singular) = iubes , he/she = iubet , we = iubemus , you(plural) = iubetis , they = iubent\n" ,imperfect="I = iubebam , you(singular) = iubebas , he/she = iubebat , we = iubebamus , you(plural) = iubebatis , they = iubebant\n" ,perfect="I = iussi , you(singular) = iussisti , he/she = iussit , we = iussimus , you(plural) = iussistis , they = iusserunt\n")
     print(dictator)
     
 def deleo():
@@ -735,7 +735,7 @@ def ignavus():
     print(dictator)
     
 def nolo():
-    dictator = Initial("not want\n" ,"be unwilling, refuse\n" ,"I = nolo , you(singular) = non vis , he/she = non vult , we = nolumus , you(plural) = non vultis , they = nolunt\n" ,"I = nolebam , you(singular) = nolebas , he/she = nolebat , we = nolebamus , you(plural) = nolebatis , they = nolebant\n" ,"I = nolui , you(singular) = noluisti , he/she = noluit , we = noluimus , you(plural) = noluistis , they = noluerunt\n")
+    dictator = Initial("not want\n" ,"be unwilling / refuse\n" ,"I = nolo , you(singular) = non vis , he/she = non vult , we = nolumus , you(plural) = non vultis , they = nolunt\n" ,"I = nolebam , you(singular) = nolebas , he/she = nolebat , we = nolebamus , you(plural) = nolebatis , they = nolebant\n" ,"I = nolui , you(singular) = noluisti , he/she = noluit , we = noluimus , you(plural) = noluistis , they = noluerunt\n")
     print(dictator)
     
 def traho():
@@ -787,7 +787,7 @@ def facilis():
     print(dictator)
     
 def apud():
-    dictator = Initial("among\n" ,"At someone's house")
+    dictator = Initial("among\n" ,"At someone's house\n")
     print(dictator)
     
 def decorus():
@@ -809,5 +809,5 @@ def quamquam():
     print(dictator)
     
 def deus():
-    dictator = Initial("god\n" ,"goddess\n")
+    dictator = Initial("god\n" ,otherInfo="dea = goddess\n")
     print(dictator)
