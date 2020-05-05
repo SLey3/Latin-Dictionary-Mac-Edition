@@ -36,7 +36,7 @@ def wordList(word_box):
     pop_up = Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
-    listbox = Listbox(pop_up, height=40, width=60, border=2 )
+    listbox = Listbox(pop_up, height=40, width=60, border=0 )
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
     scroll.grid(row=4, column=3)
@@ -55,7 +55,7 @@ def help(word_box):
     pop_window = Tk()
     pop_window.title("Help")
     pop_window.geometry('610x600')
-    helpbox = Listbox(pop_window, height=30, width=60, border=2)
+    helpbox = Listbox(pop_window, height=30, width=60, border=0)
     helpbox.grid(column=0, row=0, columnspan=2, rowspan=3, pady=20, padx=20)
     for command in Help:
         helpbox.insert('end', command)
