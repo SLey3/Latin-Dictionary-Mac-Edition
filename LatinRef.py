@@ -12,5 +12,4 @@ class Initial:
         self.additionalInfo = otherInfo
 
     def __str__(self):
-        return  str(self.__class__) + '\n' + '\n'.join((str(item) + ' = ' + str(self.__dict__[item]) for item in sorted(self.__dict__)))
-    
+        return  str(self.__class__) + '\n' + '\n'.join((str(item) + ' = ' + "\n " + str(self.__dict__[item]) for item in self.__dict__ if str(self.__class__) != ""))
