@@ -36,7 +36,7 @@ def wordList(word_box):
     pop_up = Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
-    listbox = Listbox(pop_up, height=40, width=60, border=0 )
+    listbox = Listbox(pop_up, height=40, width=60, border=0)
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
     scroll.grid(row=4, column=3)
