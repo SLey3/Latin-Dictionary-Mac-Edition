@@ -5,7 +5,7 @@ import csv
 from LatinRef import Initial
 from tkinter import messagebox
 import functionRef
-from pynput.keyboard import Controller, Key
+from pynput.keyboard import Listener, Key
 
 # Paths
 picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.png'
@@ -18,31 +18,45 @@ app.iconphoto('wm', tk.PhotoImage(file=picturePath1))
 
 # Functions
 def clearEntry(variable):
+    """
+    Clears the entry of the user
+    """
     lbl_entry.delete(0, END)
     word_box.insert(0, "Entry Deleted.")
     
 
 def clearBox(target):
+    """
+    Clears the action log of the application.
+    """
     word_box.delete(0, END)
     word_box.insert(END, None)
     return print("Box cleared", flush=True)
 
-def findWord(userRef = None, cmd = None):
-    keyboard = Controller()
-    try:
-        if keyboard.pressed('command+f') == True:
-            print("Works")
-    except:
-        pass
+def findWord(root, actionLog = None, userRef = None, cmd = None):
+    """
+    Finds the word or letter of the userInput and transports and higlights the word or letter.
+    """
+    keyboard = Listener()
+    print(keyboard.pressed(Key.cmd) and keyboard.pressed('f'))
+    if keyboard.press(Key.cmd) and keyboard.('f'):
+        fd_lbl = Label(root, text="Find:", font=('Times', 11))
+        fd_lbl.grid(column=0, row=23)
+        fd_ent = Entry(root)
+        fd_ent.grid(column=1, row=23)
+  
             
       
 def wordList(listBox):
-    findWord()
+    """
+    Opens a word list of all latin words.
+    """
     word_box.insert(0, "List pop up created.")
     wordlist = functionRef.words()
     pop_up = tk.Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
+    findWord(pop_up)
     listbox = Listbox(pop_up, height=40, width=60, border=0)
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
