@@ -5,35 +5,42 @@ import csv
 from LatinRef import Initial
 from tkinter import messagebox
 import functionRef
+from pynput.keyboard import Controller, Key
 
 # Paths
 picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.png'
 
-
-    
-
 # Window Object
 app = tk.Tk()
-app.title("Latin Unit I Dictionary - based on Latin I of Orion Academy")
+app.title("Latin I Dictionary")
 app.geometry('1110x950')
 app.iconphoto('wm', tk.PhotoImage(file=picturePath1))
 
-
 # Functions
-def clearEntry(lbl_entry):
+def clearEntry(variable):
     lbl_entry.delete(0, END)
     word_box.insert(0, "Entry Deleted.")
     
 
-def clearBox(word_box):
+def clearBox(target):
     word_box.delete(0, END)
     word_box.insert(END, None)
     return print("Box cleared", flush=True)
-    
-def wordList(word_box):
+
+def findWord(userRef = None, cmd = None):
+    keyboard = Controller()
+    try:
+        if keyboard.pressed('command+f') == True:
+            print("Works")
+    except:
+        pass
+            
+      
+def wordList(listBox):
+    findWord()
     word_box.insert(0, "List pop up created.")
     wordlist = functionRef.words()
-    pop_up = Tk()
+    pop_up = tk.Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
     listbox = Listbox(pop_up, height=40, width=60, border=0)
@@ -49,7 +56,7 @@ def wordList(word_box):
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted")  
     pop_up.mainloop()
-def help(word_box):
+def help(Box):
     word_box.insert(0, "Help pop up created.")
     Help = functionRef.help()
     pop_window = Tk()
@@ -63,6 +70,8 @@ def help(word_box):
     exit_btn = Button(pop_window, text="ok", command=pop_window.destroy)
     exit_btn.grid(column=0,row=4)
     word_box.insert(0, "Help pop_up deleted")
+    pop_window.mainloop()
+    
 # Csv file reader
 with open('LatinWordRef.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
@@ -78,7 +87,7 @@ with open('LatinWordRef.csv') as csv_file:
         line_count += 1
     print(f'Processed {line_count} lines.')
   
-def call():
+def call(callResponce):
     responce = lbl_entry.get()
     word = ref.get(responce , None)
     messagebox.showinfo("Definition", word)
@@ -106,18 +115,18 @@ lbl_entry.grid(row=1, column=0)
 info_lbl = Label(app, text="The box is mean't as a action log for buttons to log commands.", font=('Times', 12), pady=20)
 info_lbl.grid(row=2, column=0, sticky=W)
 # "Enter" Button
-ent_btn = Button(app, text='Enter', command=call)
+ent_btn = Button(app, text='Enter', command=lambda: call(callResponce=lbl_entry))
 ent_btn.grid(column=1 ,row=1, pady=20)
 # clear Buttons
-clear_btn1 = Button(app, text='Clear Entry', command=lambda: clearEntry(lbl_entry))
+clear_btn1 = Button(app, text='Clear Entry', command=lambda: clearEntry(variable=lbl_entry))
 clear_btn1.grid(row=1, column=2, pady=20)
-clear_btn2 = Button(app, text='Clear Log', command=lambda: clearBox(word_box))
+clear_btn2 = Button(app, text='Clear Log', command=lambda: clearBox(target=word_box))
 clear_btn2.grid(row=2, column=2, pady=20)
 # word list button
-list_btn = Button(app, text='Word List', command=lambda: wordList(word_box))
+list_btn = Button(app, text='Word List', command=lambda: wordList(listBox=word_box))
 list_btn.grid(column=1, row=2, pady=20)
 # help button
-help_btn = Button(app, text='Help', command=lambda: help(word_box))
+help_btn = Button(app, text='Help', command=lambda: help(Box=word_box))
 help_btn.grid(column=0, row=20, pady=20)
 # Word list
 word_box = Listbox(app, height=25, width=115 , border=2)
