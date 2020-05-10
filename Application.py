@@ -5,7 +5,8 @@ import csv
 from LatinRef import Initial
 from tkinter import messagebox
 import functionRef
-from pynput.keyboard import Listener, Key
+import Quartz
+import keyboard
 
 # Paths
 picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.png'
@@ -37,9 +38,7 @@ def findWord(root, actionLog = None, userRef = None, cmd = None):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
-    keyboard = Listener()
-    print(keyboard.pressed(Key.cmd) and keyboard.pressed('f'))
-    if keyboard.press(Key.cmd) and keyboard.('f'):
+    if keyboard.is_pressed('cmd + f'):
         fd_lbl = Label(root, text="Find:", font=('Times', 11))
         fd_lbl.grid(column=0, row=23)
         fd_ent = Entry(root)

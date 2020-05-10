@@ -1,3 +1,7 @@
+"""
+Function Reference for Application
+"""
+
 #FUNCTIONS
 def help():
     commands = ["list of Button functions", "help = Display of commands", "Word list = Shows all latin words that are defined.", "Enter = Enters the entry and searches for the word inputed in the search bar.", "Clear entry = Clears the search bar.", "Clear log = Clears the actions log."]

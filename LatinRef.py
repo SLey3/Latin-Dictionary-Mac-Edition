@@ -1,5 +1,11 @@
+"""
+Latin Initial reference for the .csv file
+"""
 # INITILIZATION 
 class Initial:
+    """
+    Initial __init__ and __str__ to read and organize information from the .csv file
+    """
     def __init__(self, definition, others = None, nominative = None, dative = None , accusative = None, present = None, imperfect = None, perfect = None , otherInfo = None):
         self.definition = definition
         self.other_meanings = others
