@@ -34,15 +34,24 @@ def clearBox(target):
     word_box.insert(END, None)
     return print("Box cleared", flush=True)
 
-def findWord(root, actionLog = None, userRef = None, cmd = None):
+def findWord(root, actionLog, userRef, cmd = None):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
-    if keyboard.is_pressed('cmd + f'):
-        fd_lbl = Label(root, text="Find:", font=('Times', 11))
-        fd_lbl.grid(column=0, row=23)
-        fd_ent = Entry(root)
-        fd_ent.grid(column=1, row=23)
+    #if keyboard.is_pressed('cmd + f'):
+    fd_lbl = Label(root, text="Find:", font=('Times', 11))
+    fd_lbl.grid(column=0, row=23)
+    ent_text = StringVar()
+    fd_ent = Entry(root, textvariable=ent_text)
+    fd_ent.grid(column=1, row=23)
+    fd_btn = Button(root, text="Enter", font=('Times', 11))
+    fd_btn.grid(column=2, row=23)
+    responce = fd_ent.get()
+    actionLog.insert(0, "Find tab created")
+    index = fd_ent.index(responce)
+    result = userRef.get(index, fd_ent)
+    userRef.insert(index, result, fg='yellow')
+        
   
             
       
@@ -55,7 +64,7 @@ def wordList(listBox):
     pop_up = tk.Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
-    findWord(pop_up)
+    findWord(pop_up, word_box, listBox)
     listbox = Listbox(pop_up, height=40, width=60, border=0)
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
