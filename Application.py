@@ -1,3 +1,7 @@
+"""
+Main Application frame
+"""
+# Imports
 from tkinter import *
 from pathlib import Path
 import tkinter as tk
@@ -34,7 +38,16 @@ def clearBox(target):
     word_box.insert(END, None)
     return print("Box cleared", flush=True)
 
-def findWord(root, actionLog, userRef, cmd = None):
+def findReference(Log, ref, indexRef, variables, text):
+    responce = variables.get()
+    Log.insert(0, "Find tab created")
+    mapObject = list(indexRef)
+    try:
+        index = mapObject.index(responce)
+        ref.insert(index, text="works")
+    except:ValueError() and UnboundLocalError()
+    
+def findWord(root, actionLog, userRef, indexReference):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
@@ -44,13 +57,9 @@ def findWord(root, actionLog, userRef, cmd = None):
     ent_text = StringVar()
     fd_ent = Entry(root, textvariable=ent_text)
     fd_ent.grid(column=1, row=23)
-    fd_btn = Button(root, text="Enter", font=('Times', 11))
+    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
     fd_btn.grid(column=2, row=23)
-    responce = fd_ent.get()
-    actionLog.insert(0, "Find tab created")
-    index = fd_ent.index(responce)
-    result = userRef.get(index, fd_ent)
-    userRef.insert(index, result, fg='yellow')
+   
         
   
             
@@ -60,20 +69,20 @@ def wordList(listBox):
     Opens a word list of all latin words.
     """
     word_box.insert(0, "List pop up created.")
-    wordlist = functionRef.words()
+    reference = functionRef.words()
     pop_up = tk.Tk()
     pop_up.title("List")
     pop_up.geometry('650x925')
-    findWord(pop_up, word_box, listBox)
     listbox = Listbox(pop_up, height=40, width=60, border=0)
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
     scroll.grid(row=4, column=3)
     listbox.configure(yscrollcommand=scroll.set)
     scroll.configure(command=listbox.yview)
-    for word in wordlist:
+    for word in reference:
         listbox.insert('end', word)
     
+    findWord(pop_up, word_box, listBox, reference)
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted")  
