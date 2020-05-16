@@ -44,7 +44,8 @@ def findReference(Log, ref, indexRef, variables, text):
     mapObject = list(indexRef)
     try:
         index = mapObject.index(responce)
-        ref.insert(index, text="works")
+        ref.delete(index, END)
+        ref.insert(index, "Works")
     except:ValueError() and UnboundLocalError()
     
 def findWord(root, actionLog, userRef, indexReference):
