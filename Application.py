@@ -39,26 +39,30 @@ def clearBox(target):
     return print("Box cleared", flush=True)
 
 def findReference(Log, ref, indexRef, variables, text):
+    print("Hi")
     responce = variables.get()
     Log.insert(0, "Find tab created")
     mapObject = list(indexRef)
     try:
         index = mapObject.index(responce)
-        ref.delete(index, END)
-        ref.insert(index, "Works")
-    except:ValueError() and UnboundLocalError()
+        print(index)
+    except ValueError:
+        print(f'{responce} was not in mapObject')
+    except UnboundLocalError as e:
+        print(e)
+        
+
     
 def findWord(root, actionLog, userRef, indexReference):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
-    #if keyboard.is_pressed('cmd + f'):
     fd_lbl = Label(root, text="Find:", font=('Times', 11))
     fd_lbl.grid(column=0, row=23)
     ent_text = StringVar()
     fd_ent = Entry(root, textvariable=ent_text)
     fd_ent.grid(column=1, row=23)
-    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
+    fd_btn = Button(root, text="Enter", font=('Times', 11), command=findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
     fd_btn.grid(column=2, row=23)
    
         
@@ -82,11 +86,10 @@ def wordList(listBox):
     scroll.configure(command=listbox.yview)
     for word in reference:
         listbox.insert('end', word)
-    
-    findWord(pop_up, word_box, listBox, reference)
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
-    word_box.insert(0, "List Pop up deleted")  
+    word_box.insert(0, "List Pop up deleted") 
+    keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
     pop_up.mainloop()
 def help(Box):
     word_box.insert(0, "Help pop up created.")
