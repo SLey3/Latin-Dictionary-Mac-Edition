@@ -13,7 +13,7 @@ import Quartz
 import keyboard
 
 # Paths
-picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.png'
+picturePath1 = str(Path.home()) + '/Latin_app/Contents/Pictures/Logo.png'
 
 # Window Object
 app = tk.Tk()
@@ -50,6 +50,7 @@ def findReference(Log, ref, indexRef, variables, text):
         print(f'{responce} was not in mapObject')
     except UnboundLocalError as e:
         print(e)
+        
         
 
     
@@ -89,7 +90,8 @@ def wordList(listBox):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-    keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
+    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
+    findWord(pop_up, word_box, listBox, reference)
     pop_up.mainloop()
 def help(Box):
     word_box.insert(0, "Help pop up created.")
