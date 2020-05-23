@@ -13,8 +13,8 @@ import Quartz
 import keyboard
 
 # Paths
-picturePath1 = str(Path.home()) + '/Latin_app/Pictures/Logo.png'
-
+picturePath1 = str(Path.home()) + '/Latin_app/Contents/Pictures/Logo.png'
+csvPath = str(Path.home()) + '/Latin_app/Contents/LatinWordRef.csv'
 # Window Object
 app = tk.Tk()
 app.title("Latin I Dictionary")
@@ -36,20 +36,24 @@ def clearBox(target):
     """
     word_box.delete(0, END)
     word_box.insert(END, None)
-    return print("Box cleared", flush=True)
+    print("Box cleared")
 
 def findReference(Log, ref, indexRef, variables, text):
     print("Hi")
     responce = variables.get()
     Log.insert(0, "Find tab created")
-    mapObject = list(indexRef)
+    mapObject = indexRef
     try:
         index = mapObject.index(responce)
-        print(index)
+        print(ref.get(index))
+        ref.activate(index+1)
+        print(ref.curselection())
+        ref.see(ACTIVE)
     except ValueError:
-        print(f'{responce} was not in mapObject')
+        messagebox.showerror("Error 3", f'{responce} was not in mapObject')
     except UnboundLocalError as e:
         print(e)
+        
         
 
     
@@ -62,7 +66,7 @@ def findWord(root, actionLog, userRef, indexReference):
     ent_text = StringVar()
     fd_ent = Entry(root, textvariable=ent_text)
     fd_ent.grid(column=1, row=23)
-    fd_btn = Button(root, text="Enter", font=('Times', 11), command=findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
+    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
     fd_btn.grid(column=2, row=23)
    
         
@@ -90,6 +94,7 @@ def wordList(listBox):
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
     keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
+    findWord(pop_up, word_box, listBox, reference)
     pop_up.mainloop()
 def help(Box):
     word_box.insert(0, "Help pop up created.")
@@ -108,7 +113,7 @@ def help(Box):
     pop_window.mainloop()
     
 # Csv file reader
-with open('LatinWordRef.csv') as csv_file:
+with open(csvPath) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     ref = {}

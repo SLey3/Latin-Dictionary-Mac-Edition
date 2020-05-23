@@ -5,7 +5,7 @@ Function Reference for Application
 #FUNCTIONS
 def help():
     commands = ["list of Button functions", "help = Display of commands", "Word list = Shows all latin words that are defined.", "Enter = Enters the entry and searches for the word inputed in the search bar.", "Clear entry = Clears the search bar.", "Clear log = Clears the actions log."]
-    return map(str, commands)
+    return commands
 def words():
     wordList = ["salve" , "vale" , "et" , "est" , "in" , "sunt" , "non" , "insula" , "sed" , "oppidum"
                 , "quoque" , "canis" , "coquus" , "filia" , "filius" , "hortus" , "mater" , "pater" , "servus" , "via" , "amicus" , "ancilla" , "cena" , "cibus"
@@ -19,4 +19,4 @@ def words():
                 "ostendo" , "trado" ,  "nomen" , "accipio" , "frater" , "soror" , "invenio" , "pax" , "bellum" , "nos" , "quam" , "semper" , "taceo" , "stultus" , "callidus" , "uxor" ,
                  "suus" , "solus" , "nuntio" , "magister" , "discipulus" , "doceo" , "subito" , "quaeso" , "capio" , "nunc" , "tum" , "credo" , "de" , "noster" , "placet" , "civis" , "lego"
                  , "sollicitus" , "mons" , "mirabilis" , "templum" , "mitto" , "sentio" , "tandem" , "iam" , "terra" , "custodio" , "fortiter" , "fugio" , "igitur" , "tristis" , "iubeo" , "deleo" , "displodo" , "aeger" , "alter" , "fessus" , "ignavus" , "nolo" , "-ne" , "traho" , "hic" , "ille" , "possum" , "-que" , "ceteri" , "novus" , "se" , "vita" , "attonitus" , "facilis" , "apud" , "decorus" , "ipse" , "iste" , "necesse" , "quamquam" , "deus"] 
-    return map(str, wordList) 
+    return wordList
