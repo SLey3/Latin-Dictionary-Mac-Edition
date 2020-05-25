@@ -14,11 +14,7 @@ import keyboard
 
 # Paths
 picturePath1 = str(Path.home()) + '/Latin_app/Contents/Pictures/Logo.png'
-<<<<<<< HEAD:Contents/Application.py
 csvPath = str(Path.home()) + '/Latin_app/Contents/LatinWordRef.csv'
-=======
-
->>>>>>> f3636c96301ec3fbe51811b46ab1d837365c82cf:Contents/Application.py
 # Window Object
 app = tk.Tk()
 app.title("Latin I Dictionary")
@@ -46,13 +42,12 @@ def findReference(Log, ref, indexRef, variables, text):
     print("Hi")
     responce = variables.get()
     Log.insert(0, "Find tab created")
-    mapObject = indexRef
     try:
-        index = mapObject.index(responce)
+        index = indexRef.index(responce)
         print(ref.get(index))
-        ref.activate(index+1)
+        ref.activate(index)
         print(ref.curselection())
-        ref.see(ACTIVE)
+        ref.see(index)
     except ValueError:
         messagebox.showerror("Error 3", f'{responce} was not in mapObject')
     except UnboundLocalError as e:
@@ -97,11 +92,7 @@ def wordList(listBox):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-<<<<<<< HEAD:Contents/Application.py
     keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
-=======
-    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
->>>>>>> f3636c96301ec3fbe51811b46ab1d837365c82cf:Contents/Application.py
     findWord(pop_up, word_box, listBox, reference)
     pop_up.mainloop()
 def help(Box):
