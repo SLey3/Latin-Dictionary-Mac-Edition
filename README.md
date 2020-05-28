@@ -1,4 +1,4 @@
-# Latin Dictionary Mac Edition [![Run on Repl.it](https://repl.it/badge/github/SLey3/Latin-Dictionary-Mac-Edition)](https://repl.it/github/SLey3/Latin-Dictionary-Mac-Edition)
+# Latin Dictionary Mac Edition [![Run on Repl.it](https://repl.it/badge/github/SLey3/Latin-Dictionary-Mac-Edition)](https://repl.it/github/SLey3/Latin-Dictionary-Mac-Edition) [![Build Status](https://travis-ci.com/SLey3/Latin-Dictionary-Mac-Edition.svg?branch=master)](https://travis-ci.com/SLey3/Latin-Dictionary-Mac-Edition)
 This is a Latin Dictionary following the Orion Academy Latin I course. Latin words from this dictionary are from this course. If your in Orion Academy and are in Latin II or III, this dictionary is not recommended. This dictionary is currently being updated as much as possible.  
 
 # **_Installation_**
