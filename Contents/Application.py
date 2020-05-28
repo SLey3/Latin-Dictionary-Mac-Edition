@@ -78,7 +78,7 @@ def wordList(listBox):
     """
     word_box.insert(0, "List pop up created.")
     reference = functionRef.words()
-    pop_up = tk.Tk()
+    pop_up = Toplevel()
     pop_up.title("List")
     pop_up.geometry('650x925')
     listbox = Listbox(pop_up, height=40, width=60, border=0)
@@ -92,9 +92,9 @@ def wordList(listBox):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-    keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
+    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
     findWord(pop_up, word_box, listBox, reference)
-    pop_up.mainloop()
+    
 def help(Box):
     word_box.insert(0, "Help pop up created.")
     Help = functionRef.help()

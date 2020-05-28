@@ -1,0 +1,10 @@
+# MANIFEST for Latin Dictionary Application
+include LICENSE.txt
+include README.md
+include ChangeLog.md
+
+graft Contents
+graft Contents/Pictures
+graft Contents/html
+
+global-exclude __pycache__ *.pyc
