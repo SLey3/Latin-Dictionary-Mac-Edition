@@ -1,20 +1,6 @@
-language: python
+#language: python
 
-python:
-  - 3.8
+#python:
+ # - 3.8
 
-cache: yarn
-
-install:
-  - yarn install
-
-script:
-  - npm test
-  - yarn run build
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: master
+# To be continued later on
