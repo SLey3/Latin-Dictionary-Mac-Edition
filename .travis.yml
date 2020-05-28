@@ -7,9 +7,9 @@ name: Python package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ change-find ]
   pull_request:
-    branches: [ master ]
+    branches: [ change-find ]
 
 jobs:
   build:
