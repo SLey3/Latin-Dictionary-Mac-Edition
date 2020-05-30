@@ -1,6 +1,22 @@
-#language: python
+language: python
 
-#python:
- # - 3.8
+python:
+  - 3.8
 
+before_script:
+  - cd ~/Latin_app/Contents
+
+script:
+  - ver=$(python -c"import sys; print(sys.version_info.major)")
+  - if [ $ver -eq 2 ]; then
+  - echo "python version 2"
+  - echo "Configuring using python3 to install keyboard. Make sure to use python 3 in your shell."
+  - python3 -m pip install keyboard
+  - elif [ $ver -eq 3 ]; then
+  - echo "python version 3"
+  - pip install keyboard
+  - else 
+  - echo "terminating pre setup."
+  - exit
+  - fi  
 # To be continued later on

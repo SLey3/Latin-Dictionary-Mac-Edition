@@ -6,9 +6,9 @@ from tkinter import *
 from pathlib import Path
 import tkinter as tk
 import csv
-from LatinRef import Initial
+from Modules.LatinRef import Initial
 from tkinter import messagebox
-import functionRef
+import Modules.functionRef as functionRef
 import Quartz
 import keyboard
 
@@ -38,16 +38,19 @@ def clearBox(target):
     word_box.insert(END, None)
     print("Box cleared")
 
-def findReference(Log, ref, indexRef, variables, text):
+
+      
+        
+
+def findReference(Log, ref, indexRef, variables):
     print("Hi")
-    responce = variables.get()
+    responce = variables
+    print(responce)
     Log.insert(0, "Find tab created")
     try:
-        index = indexRef.index(responce)
-        print(ref.get(index))
-        ref.activate(index)
-        print(ref.curselection())
-        ref.see(index)
+        print(indexRef.get(responce))
+        indexRef.activate(responce)
+        indexRef.see(responce)
     except ValueError:
         messagebox.showerror("Error 3", f'{responce} was not in mapObject')
     except UnboundLocalError as e:
@@ -56,23 +59,28 @@ def findReference(Log, ref, indexRef, variables, text):
         
 
     
-def findWord(root, actionLog, userRef, indexReference):
+def findWord(root, actionLog, userRef, indexReference, dictRef):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
     fd_lbl = Label(root, text="Find:", font=('Times', 11))
     fd_lbl.grid(column=0, row=23)
-    ent_text = StringVar()
-    fd_ent = Entry(root, textvariable=ent_text)
+    fd_ent = Entry(root)
     fd_ent.grid(column=1, row=23)
-    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent, ent_text))
+    raw = fd_ent.get()
+    print(raw)
+        
+    str_responce = str(raw)
+    print(str_responce)
+    raw_index = indexReference.index(str_responce)
+    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, raw_index))
     fd_btn.grid(column=2, row=23)
    
         
   
             
       
-def wordList(listBox):
+def wordList(listBox, dict):
     """
     Opens a word list of all latin words.
     """
@@ -92,13 +100,14 @@ def wordList(listBox):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference))
-    findWord(pop_up, word_box, listBox, reference)
-    
+    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference, dict))
+    findWord(pop_up, word_box, listBox, reference, dict)
+    pop_up.update()
+
 def help(Box):
     word_box.insert(0, "Help pop up created.")
     Help = functionRef.help()
-    pop_window = Tk()
+    pop_window = Toplevel()
     pop_window.title("Help")
     pop_window.geometry('610x600')
     helpbox = Listbox(pop_window, height=30, width=60, border=0)
@@ -109,7 +118,7 @@ def help(Box):
     exit_btn = Button(pop_window, text="ok", command=pop_window.destroy)
     exit_btn.grid(column=0,row=4)
     word_box.insert(0, "Help pop_up deleted")
-    pop_window.mainloop()
+    pop_window.update()
     
 # Csv file reader
 with open(csvPath) as csv_file:
@@ -128,7 +137,7 @@ with open(csvPath) as csv_file:
   
 def call(callResponce):
     responce = lbl_entry.get()
-    word = ref.get(responce , None)
+    word = ref.get(responce, None)
     messagebox.showinfo("Definition", word)
     
     word_box.insert(0, "Word Loaded.")
@@ -162,7 +171,7 @@ clear_btn1.grid(row=1, column=2, pady=20)
 clear_btn2 = Button(app, text='Clear Log', command=lambda: clearBox(target=word_box))
 clear_btn2.grid(row=2, column=2, pady=20)
 # word list button
-list_btn = Button(app, text='Word List', command=lambda: wordList(listBox=word_box))
+list_btn = Button(app, text='Word List', command=lambda: wordList(word_box, ref))
 list_btn.grid(column=1, row=2, pady=20)
 # help button
 help_btn = Button(app, text='Help', command=lambda: help(Box=word_box))

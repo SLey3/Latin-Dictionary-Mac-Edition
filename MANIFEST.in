@@ -5,6 +5,9 @@ include ChangeLog.md
 
 graft Contents
 graft Contents/Pictures
-graft Contents/html
 
-global-exclude __pycache__ *.pyc
+prune Contents/html
+
+global-include Modules *.py
+
+global-exclude __pycache__ *.py[c]
