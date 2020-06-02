@@ -42,15 +42,19 @@ def clearBox(target):
       
         
 
-def findReference(Log, ref, indexRef, variables):
+def findReference(Log, ref, indexRef, entry):
     print("Hi")
-    responce = variables
+    responce = entry.get().lower()
     print(responce)
     Log.insert(0, "Find tab created")
     try:
-        print(indexRef.get(responce))
-        indexRef.activate(responce)
-        indexRef.see(responce)
+        index = indexRef.index(responce)
+        print(index)
+        ref.select_clear(0, 'end')
+        ref.selection_set(index+1)
+        ref.activate(index+1)
+        ref.see(index+1)
+        ref.selection_anchor(index+1)
     except ValueError:
         messagebox.showerror("Error 3", f'{responce} was not in mapObject')
     except UnboundLocalError as e:
@@ -67,20 +71,15 @@ def findWord(root, actionLog, userRef, indexReference, dictRef):
     fd_lbl.grid(column=0, row=23)
     fd_ent = Entry(root)
     fd_ent.grid(column=1, row=23)
-    raw = fd_ent.get()
-    print(raw)
-        
-    str_responce = str(raw)
-    print(str_responce)
-    raw_index = indexReference.index(str_responce)
-    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, raw_index))
+  
+    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent))
     fd_btn.grid(column=2, row=23)
    
         
   
             
       
-def wordList(listBox, dict):
+def wordList(listBox, dictRaw):
     """
     Opens a word list of all latin words.
     """
@@ -100,7 +99,7 @@ def wordList(listBox, dict):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-    #keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference, dict))
+    keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference, dictRaw))
     findWord(pop_up, word_box, listBox, reference, dict)
     pop_up.update()
 
