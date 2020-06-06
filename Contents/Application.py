@@ -21,6 +21,11 @@ app.title("Latin I Dictionary")
 app.geometry('1110x950')
 app.iconphoto('wm', tk.PhotoImage(file=picturePath1))
 
+# Variable definitions
+cmd_find_is_true = False
+
+find_hotkey = keyboard.add_hotkey('cmd + f', None)
+
 # Functions
 def clearEntry(variable):
     """
@@ -67,13 +72,17 @@ def findWord(root, actionLog, userRef, indexReference, dictRef):
     """
     Finds the word or letter of the userInput and transports and higlights the word or letter.
     """
-    fd_lbl = Label(root, text="Find:", font=('Times', 11))
-    fd_lbl.grid(column=0, row=23)
-    fd_ent = Entry(root)
-    fd_ent.grid(column=1, row=23)
-  
-    fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent))
-    fd_btn.grid(column=2, row=23)
+    global cmd_find_is_true
+    if not cmd_find_is_true:
+        fd_lbl = Label(root, text="Find:", font=('Times', 11))
+        fd_lbl.grid(column=0, row=23)
+        fd_ent = Entry(root)
+        fd_ent.grid(column=1, row=23)
+    
+        fd_btn = Button(root, text="Enter", font=('Times', 11), command=lambda: findReference(actionLog, userRef, indexReference, fd_ent))
+        fd_btn.grid(column=2, row=23)
+        cmd_find_is_true = True
+
    
         
   
@@ -83,11 +92,15 @@ def wordList(listBox, dictRaw):
     """
     Opens a word list of all latin words.
     """
+    global cmd_find_is_true
+    global find_hotkey
+    cmd_find_is_true = False
     word_box.insert(0, "List pop up created.")
     reference = functionRef.words()
     pop_up = Toplevel()
     pop_up.title("List")
     pop_up.geometry('650x925')
+    print(pop_up)
     listbox = Listbox(pop_up, height=40, width=60, border=0)
     listbox.grid(row=3, column=0, columnspan=3, rowspan=7, pady=20, padx=20)
     scroll = Scrollbar(pop_up)
@@ -99,8 +112,8 @@ def wordList(listBox, dictRaw):
     exit_btn = Button(pop_up, text="ok", command=pop_up.destroy)
     exit_btn.grid(column=2, row=20)  
     word_box.insert(0, "List Pop up deleted") 
-    keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference, dictRaw))
-    findWord(pop_up, word_box, listBox, reference, dict)
+    keyboard.remove_hotkey(find_hotkey)
+    find_hotkey = keyboard.add_hotkey('cmd + f', findWord, args=(pop_up, word_box, listBox, reference, dictRaw))
     pop_up.update()
 
 def help(Box):
